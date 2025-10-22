@@ -1,0 +1,10 @@
+{
+    "e4d909c290d0fb1ca068ffaddf22cbd0": "Trojan.Generic",
+    "5d41402abc4b2a76b9719d911017c592": "Ransomware.CryptoLocker",
+    "7d793037a0760186574b0282f2f435e7": "Spyware.Keylogger",
+    "8d6fae9c58e9c294d8be3c393b7d8e8d": "Worm.Stuxnet",
+    "9f86d081884c7d659a2feaa0c55ad015": "Virus.Win32",
+    "a5b5c5d5e5f5a6b6c6d6e6f6a7b7c7d7": "Adware.Popup",
+    "b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1": "Backdoor.RAT",
+    "c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2": "Rootkit.TDSS"
+}
