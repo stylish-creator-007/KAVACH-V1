@@ -1,14 +1,16 @@
 import json
 import os
 from typing import Dict, Any
+import logging
 
 class ConfigManager:
     def __init__(self, config_file='config/cybershield_config.json'):
         self.config_file = config_file
+        self.logger = logging.getLogger(__name__)
         self.config = self.load_config()
-    
+
     def load_config(self) -> Dict[str, Any]:
-        """Load configuration from file"""
+        """Load configuration from file or create defaults"""
         default_config = {
             "security": {
                 "threat_level_threshold": 80,
@@ -33,70 +35,44 @@ class ConfigManager:
                 "terminate_malicious_processes": True
             }
         }
-        
+
         try:
             if os.path.exists(self.config_file):
                 with open(self.config_file, 'r') as f:
-                    loaded_config = json.load(f)
-                    # Merge with default config
-                    return self.merge_configs(default_config, loaded_config)
+                    config_data = json.load(f)
+                    self.logger.info("✅ Configuration loaded successfully.")
+                    return config_data
             else:
-                # Create config directory and file
+                self.logger.warning("⚠️ Config file not found — creating default config.")
                 os.makedirs(os.path.dirname(self.config_file), exist_ok=True)
                 with open(self.config_file, 'w') as f:
-                    json.dump(default_config, f, indent=2)
+                    json.dump(default_config, f, indent=4)
                 return default_config
-                
+
         except Exception as e:
-            print(f"Error loading config: {e}")
+            self.logger.error(f"Error loading configuration: {e}")
             return default_config
-    
-    def merge_configs(self, default: Dict, custom: Dict) -> Dict:
-        """Merge default and custom configurations"""
-        merged = default.copy()
-        
-        for key, value in custom.items():
-            if isinstance(value, dict) and key in merged and isinstance(merged[key], dict):
-                merged[key] = self.merge_configs(merged[key], value)
-            else:
-                merged[key] = value
-        
-        return merged
-    
-    def get(self, key: str, default=None):
-        """Get configuration value"""
-        keys = key.split('.')
-        value = self.config
-        
-        for k in keys:
-            if isinstance(value, dict) and k in value:
-                value = value[k]
-            else:
-                return default
-        
-        return value
-    
-    def set(self, key: str, value: Any):
-        """Set configuration value"""
-        keys = key.split('.')
-        config_ref = self.config
-        
-        for k in keys[:-1]:
-            if k not in config_ref or not isinstance(config_ref[k], dict):
-                config_ref[k] = {}
-            config_ref = config_ref[k]
-        
-        config_ref[keys[-1]] = value
-        self.save_config()
-    
+
     def save_config(self):
         """Save configuration to file"""
         try:
             with open(self.config_file, 'w') as f:
-                json.dump(self.config, f, indent=2)
+                json.dump(self.config, f, indent=4)
+            self.logger.info("💾 Configuration saved successfully.")
         except Exception as e:
-            print(f"Error saving config: {e}")
-    
-    def reload_config(self):
-        """Reload configuration from file"""
-        self.config = self.load_config()
+            self.logger.error(f"Error saving configuration: {e}")
+
+# === TEST BLOCK (only runs when executed directly) ===
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO, format="%(message)s")
+
+    manager = ConfigManager()
+    print("\n🧩 Current Configuration:")
+    print(json.dumps(manager.config, indent=4))
+
+    # Modify something for demo
+    manager.config["security"]["threat_level_threshold"] = 90
+    manager.save_config()
+
+    print("\n✅ Updated 'threat_level_threshold' to 90 and saved.")
+

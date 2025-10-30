@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 KAVACH - Military Grade Cybersecurity Platform
-Advanced threat detection and prevention system
+Main entry point to initialize and orchestrate all modules.
 """
 
 import asyncio
@@ -9,11 +9,12 @@ import signal
 import sys
 import os
 
-# Add src to Python path
+# --- Setup environment path ---
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 
-from core.security_orchestrator import SecurityOrchestrator
-from utils.logger import setup_logging
+from src.core.security_orchestrator import SecurityOrchestrator
+from src.utils.logger import setup_logging
+
 
 class KAVACH:
     def __init__(self):
@@ -26,41 +27,33 @@ class KAVACH:
         signal.signal(signal.SIGTERM, self.signal_handler)
 
     def signal_handler(self, signum, frame):
-        print(f"\nReceived signal {signum}, shutting down gracefully...")
+        print(f"\n⚠️ Received signal {signum}, shutting down gracefully...")
         self.security_orchestrator.shutdown()
         sys.exit(0)
 
     async def run(self):
         print("""
-        KAVACH Cybersecurity Platform Starting...
+====================================================
+🛡️  KAVACH Cybersecurity Platform Starting...
+====================================================
 
-        Features:
-        - Advanced Malware Detection
-        - Ransomware Protection
-        - Network Attack Prevention
-        - Phishing Detection
-        - Web Application Firewall
-        - Behavioral Analysis
-        - Real-time Monitoring
-        - Emergency Shutdown
+Features:
+ - Advanced Malware Detection
+ - Network Intrusion Prevention
+ - Real-Time System Monitoring
+ - Threat Intelligence Analysis
+ - Automated Firewall & Access Control
 
-        Monitoring all security threats...
-        """)
-        try:
-            await self.security_orchestrator.start_protection()
-        except KeyboardInterrupt:
-            print("\nShutdown requested by user...")
-            self.security_orchestrator.shutdown()
-        except Exception as e:
-            print(f"Critical error: {e}")
-            sys.exit(1)
+⚙️  Initializing...
+""")
+
+        await self.security_orchestrator.security_main_loop()
+
 
 if __name__ == "__main__":
-    # Check if running with appropriate privileges
-    if os.name != 'nt' and hasattr(os, 'geteuid') and os.geteuid() != 0:
-        print("Please run with administrator privileges for full functionality")
-        print("   sudo python main.py")
-        sys.exit(1)
-
-    app = KAVACH()
-    asyncio.run(app.run())
+    kavach = KAVACH()
+    try:
+        asyncio.run(kavach.run())
+    except KeyboardInterrupt:
+        print("\n🛑 Termination requested by user.")
+        kavach.security_orchestrator.shutdown()

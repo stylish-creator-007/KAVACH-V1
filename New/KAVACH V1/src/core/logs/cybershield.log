@@ -1,0 +1,6 @@
+2025-10-28 15:01:20 | INFO     | root | 🛡️ Logging initialized — outputting to console and 'logs/cybershield.log'
+2025-10-28 15:01:20 | INFO     | SecurityOrchestrator | 🚀 Initializing all security modules...
+2025-10-28 15:01:20 | INFO     | FirewallManager | ✅ Default firewall rules loaded successfully.
+2025-10-28 15:01:37 | INFO     | root | 🛡️ Logging initialized — outputting to console and 'logs/cybershield.log'
+2025-10-28 15:01:37 | INFO     | SecurityOrchestrator | 🚀 Initializing all security modules...
+2025-10-28 15:01:37 | INFO     | FirewallManager | ✅ Default firewall rules loaded successfully.

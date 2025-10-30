@@ -1,0 +1,13 @@
+2025-10-28 12:16:16 | INFO     | root | 🛡️ Logging initialized — outputting to console and 'logs/cybershield.log'
+2025-10-28 12:16:16 | INFO     | LoggerTest | System initialized
+2025-10-28 12:16:16 | WARNING  | LoggerTest | Suspicious behavior detected
+2025-10-28 12:16:16 | ERROR    | LoggerTest | Intrusion detected!
+2025-10-28 15:20:12 | INFO     | root | 🛡️ Logging initialized — outputting to console and '/home/sonic/KAVACH-V1-/New/KAVACH V1/src/utils/logs/cybershield.log'
+2025-10-28 15:20:12 | INFO     | SecurityOrchestrator | 🚀 Initializing all security modules...
+2025-10-28 15:20:12 | INFO     | FirewallManager | ✅ Default firewall rules loaded successfully.
+2025-10-28 15:24:22 | INFO     | root | 🛡️ Logging initialized — outputting to console and '/home/sonic/KAVACH-V1-/New/KAVACH V1/src/utils/logs/cybershield.log'
+2025-10-28 15:24:22 | INFO     | SecurityOrchestrator | 🚀 Initializing all security modules...
+2025-10-28 15:24:22 | INFO     | FirewallManager | ✅ Default firewall rules loaded successfully.
+2025-10-28 15:27:45 | INFO     | root | 🛡️ Logging initialized — outputting to console and '/home/sonic/KAVACH-V1-/New/KAVACH V1/src/utils/logs/cybershield.log'
+2025-10-28 15:27:45 | INFO     | SecurityOrchestrator | 🚀 Initializing all security modules...
+2025-10-28 15:27:45 | INFO     | FirewallManager | ✅ Default firewall rules loaded successfully.

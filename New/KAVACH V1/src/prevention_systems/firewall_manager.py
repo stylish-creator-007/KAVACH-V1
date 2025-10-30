@@ -1,132 +1,83 @@
-import subprocess
-import platform
-import logging
-from typing import Set
+"""
+firewall_manager.py
+-------------------
+Manages network firewall rules, traffic filtering, and policy enforcement
+for the KAVACH Cybersecurity Platform.
+"""
 
-class DynamicFirewall:
+import time
+import logging
+import random
+
+
+class FirewallManager:
+    """Simulated Firewall Manager for threat blocking and rule enforcement."""
+
     def __init__(self):
-        self.logger = logging.getLogger(__name__)
-        self.blocked_ips: Set[str] = set()
-        self.blocked_ports: Set[int] = set()
-        self.is_windows = platform.system() == "Windows"
-        
-    def block_threat(self, threat_data):
-        """Block threat based on threat data"""
-        try:
-            threat_type = threat_data.get('type', '')
-            
-            if threat_type in ['PORT_SCANNING', 'CONNECTION_FLOOD', 'DOS_ATTACK']:
-                ip = threat_data.get('ip')
-                if ip and ip not in self.blocked_ips:
-                    self.block_ip(ip)
-            
-            elif threat_type == 'SUSPICIOUS_PORT':
-                port = threat_data.get('local_address', '').split(':')[-1]
-                if port.isdigit():
-                    self.block_port(int(port))
-                    
-        except Exception as e:
-            self.logger.error(f"Error blocking threat: {e}")
-    
-    def block_ip(self, ip_address):
-        """Block IP address in firewall"""
-        if ip_address in self.blocked_ips:
-            return
-            
-        self.blocked_ips.add(ip_address)
-        
-        try:
-            if self.is_windows:
-                # Windows firewall rule
-                subprocess.run([
-                    'netsh', 'advfirewall', 'firewall', 'add', 'rule',
-                    f'name=CyberShield_Block_{ip_address}',
-                    'dir=in', 'action=block', f'remoteip={ip_address}'
-                ], capture_output=True, timeout=10)
-                self.logger.info(f"✅ Blocked IP in Windows firewall: {ip_address}")
+        self.logger = logging.getLogger("FirewallManager")
+        self.active_rules = []
+        self.blocked_ips = set()
+
+    def load_default_rules(self):
+        """Load predefined or baseline firewall rules."""
+        self.active_rules = [
+            {"id": 1, "rule": "Block known malicious IPs", "status": "active"},
+            {"id": 2, "rule": "Allow internal traffic", "status": "active"},
+            {"id": 3, "rule": "Monitor suspicious ports", "status": "active"},
+        ]
+        self.logger.info("✅ Default firewall rules loaded successfully.")
+
+    def block_ip(self, ip):
+        """Block a specific IP address."""
+        if ip not in self.blocked_ips:
+            self.blocked_ips.add(ip)
+            self.logger.warning(f"🚫 IP {ip} has been blocked by the firewall.")
+        else:
+            self.logger.info(f"ℹ️ IP {ip} is already blocked.")
+
+    def allow_ip(self, ip):
+        """Remove an IP from the blocklist."""
+        if ip in self.blocked_ips:
+            self.blocked_ips.remove(ip)
+            self.logger.info(f"✅ IP {ip} removed from blocklist.")
+        else:
+            self.logger.info(f"ℹ️ IP {ip} was not blocked.")
+
+    def simulate_traffic_scan(self):
+        """Simulate scanning and blocking suspicious IP traffic."""
+        suspicious_ips = [
+            f"192.168.1.{random.randint(50, 200)}"
+            for _ in range(random.randint(1, 4))
+        ]
+
+        for ip in suspicious_ips:
+            if random.random() < 0.3:  # 30% chance to detect as threat
+                self.block_ip(ip)
             else:
-                # Linux iptables rule
-                subprocess.run([
-                    'iptables', '-A', 'INPUT', '-s', ip_address, '-j', 'DROP'
-                ], capture_output=True, timeout=10)
-                self.logger.info(f"✅ Blocked IP in iptables: {ip_address}")
-                
-        except Exception as e:
-            self.logger.error(f"❌ Error blocking IP {ip_address}: {e}")
-    
-    def block_port(self, port):
-        """Block specific port"""
-        if port in self.blocked_ports:
-            return
-            
-        self.blocked_ports.add(port)
-        
-        try:
-            if self.is_windows:
-                subprocess.run([
-                    'netsh', 'advfirewall', 'firewall', 'add', 'rule',
-                    f'name=CyberShield_Block_Port_{port}',
-                    'dir=in', 'action=block', 'protocol=TCP', f'localport={port}'
-                ], capture_output=True, timeout=10)
-                self.logger.info(f"✅ Blocked port in Windows firewall: {port}")
-            else:
-                subprocess.run([
-                    'iptables', '-A', 'INPUT', '-p', 'tcp', '--dport', str(port), '-j', 'DROP'
-                ], capture_output=True, timeout=10)
-                self.logger.info(f"✅ Blocked port in iptables: {port}")
-                
-        except Exception as e:
-            self.logger.error(f"❌ Error blocking port {port}: {e}")
-    
-    def unblock_ip(self, ip_address):
-        """Unblock IP address"""
-        if ip_address not in self.blocked_ips:
-            return
-            
-        self.blocked_ips.remove(ip_address)
-        
-        try:
-            if self.is_windows:
-                subprocess.run([
-                    'netsh', 'advfirewall', 'firewall', 'delete', 'rule',
-                    f'name=CyberShield_Block_{ip_address}'
-                ], capture_output=True, timeout=10)
-            else:
-                subprocess.run([
-                    'iptables', '-D', 'INPUT', '-s', ip_address, '-j', 'DROP'
-                ], capture_output=True, timeout=10)
-                
-            self.logger.info(f"✅ Unblocked IP: {ip_address}")
-            
-        except Exception as e:
-            self.logger.error(f"Error unblocking IP {ip_address}: {e}")
-    
-    def get_blocked_ips(self):
-        """Get list of blocked IPs"""
-        return list(self.blocked_ips)
-    
-    def get_blocked_ports(self):
-        """Get list of blocked ports"""
-        return list(self.blocked_ports)
-    
-    def clear_all_rules(self):
-        """Clear all firewall rules created by CyberShield"""
-        try:
-            if self.is_windows:
-                # Remove all CyberShield rules
-                subprocess.run([
-                    'netsh', 'advfirewall', 'firewall', 'delete', 'rule',
-                    'name=CyberShield_Block'
-                ], capture_output=True, timeout=10)
-            else:
-                # Flush iptables rules (be careful with this in production)
-                subprocess.run([
-                    'iptables', '-F'
-                ], capture_output=True, timeout=10)
-                
-            self.blocked_ips.clear()
-            self.blocked_ports.clear()
-            self.logger.info("✅ Cleared all CyberShield firewall rules")
-            
-        except Exception as e:
-            self.logger.error(f"Error clearing firewall rules: {e}")
+                self.logger.info(f"✅ Traffic from {ip} deemed safe.")
+
+        return {
+            "checked_ips": suspicious_ips,
+            "blocked": list(self.blocked_ips),
+            "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
+        }
+
+    def run_firewall_cycle(self):
+        """Simulate a complete firewall monitoring cycle."""
+        self.logger.info("🔐 Firewall cycle initiated...")
+        self.load_default_rules()
+        result = self.simulate_traffic_scan()
+        self.logger.info("🛡️ Firewall cycle completed successfully.")
+        return result
+
+
+if __name__ == "__main__":
+    # Test the FirewallManager in standalone mode
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s")
+    fw = FirewallManager()
+    report = fw.run_firewall_cycle()
+    print("\nFirewall Summary:")
+    print(f"Checked IPs: {report['checked_ips']}")
+    print(f"Blocked IPs: {report['blocked']}")
+    print(f"Timestamp : {report['timestamp']}")
+

@@ -1,0 +1,3 @@
+Evidence collection timestamp: 20251028_064202
+Evidence folder: evidence/evidence_20251028_064202
+Files collected: 5

@@ -1,0 +1,24 @@
+{
+    "security": {
+        "threat_level_threshold": 90,
+        "auto_block_malicious_ips": true,
+        "emergency_shutdown_enabled": true,
+        "shutdown_threshold": 20
+    },
+    "monitoring": {
+        "file_system_monitoring": true,
+        "network_monitoring": true,
+        "process_monitoring": true,
+        "behavior_analysis": true
+    },
+    "logging": {
+        "level": "INFO",
+        "max_file_size_mb": 100,
+        "backup_count": 5
+    },
+    "prevention": {
+        "auto_quarantine": true,
+        "block_suspicious_ports": true,
+        "terminate_malicious_processes": true
+    }
+}

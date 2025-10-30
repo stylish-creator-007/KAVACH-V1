@@ -1,251 +1,189 @@
 import re
 import logging
 from urllib.parse import urlparse, parse_qs
+from datetime import datetime
+import os
+import time
+import psutil
 
 class WebAttackProtector:
+    """
+    Detects common web attack patterns in URLs, query params, and request bodies:
+    - SQL Injection
+    - Cross-Site Scripting (XSS)
+    - Path Traversal
+    """
+
     def __init__(self):
         self.logger = logging.getLogger(__name__)
-        
-        # SQL Injection patterns
+
+        # SQL Injection patterns (compact set)
         self.sql_injection_patterns = [
-            r"(\%27)|(\')|(\-\-)|(\%23)|(#)",
-            r"((\%3D)|(=))[^\n]*((\%27)|(\')|(\-\-)|(\%3B)|(;))",
-            r"\w*((\%27)|(\'))((\%6F)|o|(\%4F))((\%72)|r|(\%52))",
-            r"((\%27)|(\'))union",
-            r"exec(\s|\+)+(s|x)p\w+",
-            r"insert(\s|\+)+into",
-            r"drop(\s|\+)+table",
-            r"update(\s|\+)+set",
-            r"delete(\s|\+)+from"
+            re.compile(r"(\%27)|(\')|(\-\-)|(\%23)|(#)", re.IGNORECASE),
+            re.compile(r"(\bunion\b|\bor\b|\band\b).*(select|insert|drop|update|delete)", re.IGNORECASE),
+            re.compile(r"(select.+from|insert\s+into|drop\s+table|update\s+\w+\s+set)", re.IGNORECASE),
         ]
-        
+
         # XSS patterns
         self.xss_patterns = [
-            r"<script.*?>.*?</script>",
-            r"javascript:",
-            r"onload\s*=",
-            r"onerror\s*=",
-            r"onclick\s*=",
-            r"onmouseover\s*=",
-            r"alert\s*\(",
-            r"document\.cookie",
-            r"<iframe.*?>",
-            r"<img.*?onerror=.*?>"
+            re.compile(r"<script.*?>", re.IGNORECASE),
+            re.compile(r"javascript\s*:", re.IGNORECASE),
+            re.compile(r"on\w+\s*=", re.IGNORECASE),
+            re.compile(r"alert\s*\(", re.IGNORECASE),
+            re.compile(r"document\.cookie", re.IGNORECASE),
         ]
-        
+
         # Path traversal patterns
         self.path_traversal_patterns = [
-            r"\.\./",
-            r"\.\.\\",
-            r"etc/passwd",
-            r"windows/win.ini",
-            r"\.\.%2f",
-            r"\.\.%5c"
+            re.compile(r"\.\./"),
+            re.compile(r"(/etc/passwd)|(/boot|/proc/)", re.IGNORECASE)
         ]
-    
-    def detect_web_attacks(self, url=None, user_input=None, headers=None):
-        """Detect various web application attacks"""
-        detected_attacks = []
-        
-        if url:
-            detected_attacks.extend(self.analyze_url(url))
-        
-        if user_input:
-            detected_attacks.extend(self.analyze_user_input(user_input))
-        
-        if headers:
-            detected_attacks.extend(self.analyze_headers(headers))
-        
-        return detected_attacks
-    
+
+    # -------------------------
+    # Core analyzers
+    # -------------------------
+    def analyze_text_for_patterns(self, text):
+        """Return list of matched categories found in text."""
+        detections = []
+
+        if not text:
+            return detections
+
+        # SQLi checks
+        for p in self.sql_injection_patterns:
+            if p.search(text):
+                detections.append("SQL_INJECTION")
+
+        # XSS checks
+        for p in self.xss_patterns:
+            if p.search(text):
+                detections.append("XSS")
+
+        # Path traversal checks
+        for p in self.path_traversal_patterns:
+            if p.search(text):
+                detections.append("PATH_TRAVERSAL")
+
+        return list(dict.fromkeys(detections))  # deduplicate preserving order
+
     def analyze_url(self, url):
-        """Analyze URL for attacks"""
-        attacks = []
-        
-        try:
-            parsed_url = urlparse(url)
-            
-            # Check for SQL injection in query parameters
-            query_params = parse_qs(parsed_url.query)
-            for param, values in query_params.items():
-                for value in values:
-                    if self.detect_sql_injection(value):
-                        attacks.append({
-                            'type': 'SQL_INJECTION',
-                            'parameter': param,
-                            'value': value,
-                            'action': 'BLOCK_REQUEST'
-                        })
-                        self.logger.warning(f"SQL Injection detected in URL parameter: {param}")
-                    
-                    if self.detect_xss(value):
-                        attacks.append({
-                            'type': 'XSS',
-                            'parameter': param,
-                            'value': value,
-                            'action': 'SANITIZE_INPUT'
-                        })
-                        self.logger.warning(f"XSS detected in URL parameter: {param}")
-            
-            # Check for path traversal in path
-            if self.detect_path_traversal(parsed_url.path):
-                attacks.append({
-                    'type': 'PATH_TRAVERSAL',
-                    'path': parsed_url.path,
-                    'action': 'BLOCK_REQUEST'
-                })
-                self.logger.warning(f"Path traversal detected: {parsed_url.path}")
-                
-        except Exception as e:
-            self.logger.error(f"URL analysis error: {e}")
-        
-        return attacks
-    
-    def analyze_user_input(self, user_input):
-        """Analyze user input for attacks"""
-        attacks = []
-        
-        if isinstance(user_input, str):
-            if self.detect_sql_injection(user_input):
-                attacks.append({
-                    'type': 'SQL_INJECTION',
-                    'input': user_input[:100],  # First 100 chars
-                    'action': 'BLOCK_REQUEST'
-                })
-            
-            if self.detect_xss(user_input):
-                attacks.append({
-                    'type': 'XSS',
-                    'input': user_input[:100],
-                    'action': 'SANITIZE_INPUT'
-                })
-            
-            if self.detect_path_traversal(user_input):
-                attacks.append({
-                    'type': 'PATH_TRAVERSAL',
-                    'input': user_input[:100],
-                    'action': 'BLOCK_REQUEST'
-                })
-        
-        return attacks
-    
-    def analyze_headers(self, headers):
-        """Analyze HTTP headers for attacks"""
-        attacks = []
-        
-        suspicious_headers = {
-            'user-agent': self.analyze_user_agent,
-            'referer': self.analyze_referer,
-            'cookie': self.analyze_cookies
+        """
+        Analyze URL (including path and query parameters) and return detections list.
+        """
+        parsed = urlparse(url)
+        detections = []
+
+        # analyze path
+        path = parsed.path or ""
+        detections += self.analyze_text_for_patterns(path)
+
+        # analyze query params
+        qs = parse_qs(parsed.query)
+        for key, vals in qs.items():
+            combined = key + " " + " ".join(vals)
+            detections += self.analyze_text_for_patterns(combined)
+
+        return list(dict.fromkeys(detections))
+
+    def analyze_request(self, method="GET", url="", headers=None, body=""):
+        """
+        Analyze a simulated HTTP request: returns summary dict:
+        { 'url': ..., 'detections': [...], 'checked_parts': {...} }
+        """
+        headers = headers or {}
+        detections = []
+
+        # URL detections
+        url_dets = self.analyze_url(url)
+        detections += url_dets
+
+        # Headers (common header-based attacks)
+        header_text = " ".join(f"{k}:{v}" for k, v in headers.items())
+        detections += self.analyze_text_for_patterns(header_text)
+
+        # Body detections
+        detections += self.analyze_text_for_patterns(body)
+
+        return {
+            "timestamp": datetime.utcnow().isoformat() + "Z",
+            "method": method,
+            "url": url,
+            "detections": list(dict.fromkeys(detections))
         }
-        
-        for header_name, header_value in headers.items():
-            if header_name.lower() in suspicious_headers:
-                analyzer = suspicious_headers[header_name.lower()]
-                header_attacks = analyzer(header_value)
-                attacks.extend(header_attacks)
-        
-        return attacks
-    
-    def detect_sql_injection(self, input_string):
-        """Detect SQL injection attempts"""
-        if not isinstance(input_string, str):
-            return False
-            
-        input_lower = input_string.lower()
-        
-        for pattern in self.sql_injection_patterns:
-            if re.search(pattern, input_lower, re.IGNORECASE):
-                return True
-        
-        return False
-    
-    def detect_xss(self, input_string):
-        """Detect XSS attempts"""
-        if not isinstance(input_string, str):
-            return False
-            
-        for pattern in self.xss_patterns:
-            if re.search(pattern, input_string, re.IGNORECASE):
-                return True
-        
-        return False
-    
-    def detect_path_traversal(self, input_string):
-        """Detect path traversal attempts"""
-        if not isinstance(input_string, str):
-            return False
-            
-        for pattern in self.path_traversal_patterns:
-            if re.search(pattern, input_string, re.IGNORECASE):
-                return True
-        
-        return False
-    
-    def analyze_user_agent(self, user_agent):
-        """Analyze User-Agent header"""
-        attacks = []
-        
-        if not user_agent:
-            return attacks
-        
-        # Check for SQL injection in User-Agent
-        if self.detect_sql_injection(user_agent):
-            attacks.append({
-                'type': 'SQL_INJECTION_USER_AGENT',
-                'user_agent': user_agent[:100],
-                'action': 'BLOCK_REQUEST'
-            })
-            self.logger.warning(f"SQL Injection in User-Agent: {user_agent[:100]}")
-        
-        return attacks
-    
-    def analyze_referer(self, referer):
-        """Analyze Referer header"""
-        attacks = []
-        
-        if not referer:
-            return attacks
-        
-        # Check for malicious referer
-        if self.detect_sql_injection(referer) or self.detect_xss(referer):
-            attacks.append({
-                'type': 'MALICIOUS_REFERER',
-                'referer': referer[:100],
-                'action': 'BLOCK_REQUEST'
-            })
-        
-        return attacks
-    
-    def analyze_cookies(self, cookie_header):
-        """Analyze Cookie header"""
-        attacks = []
-        
-        if not cookie_header:
-            return attacks
-        
-        # Check for SQL injection in cookies
-        if self.detect_sql_injection(cookie_header):
-            attacks.append({
-                'type': 'SQL_INJECTION_COOKIE',
-                'cookie': cookie_header[:100],
-                'action': 'BLOCK_REQUEST'
-            })
-            self.logger.warning(f"SQL Injection in Cookie: {cookie_header[:100]}")
-        
-        return attacks
-    
-    def sanitize_input(self, user_input):
-        """Sanitize user input to prevent attacks"""
-        if not isinstance(user_input, str):
-            return user_input
-        
-        # Remove potentially dangerous characters
-        sanitized = re.sub(r'[<>"\']', '', user_input)
-        
-        # Escape SQL special characters
-        sanitized = sanitized.replace('\\', '\\\\')
-        sanitized = sanitized.replace('%', '\\%')
-        sanitized = sanitized.replace('_', '\\_')
-        
-        return sanitized
+
+    # -------------------------
+    # Utilities for console output
+    # -------------------------
+    def compact_output(self, result):
+        """
+        Returns a single-line compact human-readable summary for a single request result.
+        Example:
+        [14:12:05] GET /login.php?user=1' -- DET: SQL_INJECTION,XSS
+        """
+        t = datetime.utcnow().strftime("%H:%M:%S")
+        dets = ",".join(result["detections"]) if result["detections"] else "NONE"
+        parsed = urlparse(result["url"])
+        short_path = (parsed.path or "/") + (("?" + parsed.query) if parsed.query else "")
+        return f"[{t}] {result['method']:4} {short_path:40} DET: {dets}"
+
+    def top_processes_summary(self, n=5):
+        """
+        Return a small list of top n processes by cpu for display:
+        ['PID 1421|CPU 92.3%|gnome-shell', ...]
+        """
+        procs = []
+        for proc in psutil.process_iter(['pid', 'name', 'cpu_percent']):
+            try:
+                info = proc.info
+                procs.append(info)
+            except (psutil.NoSuchProcess, psutil.AccessDenied):
+                continue
+        procs_sorted = sorted(procs, key=lambda p: (p.get('cpu_percent') or 0.0), reverse=True)[:n]
+        lines = []
+        for p in procs_sorted:
+            name = (p.get('name') or "")[:20]
+            cpu = (p.get('cpu_percent') or 0.0)
+            lines.append(f"PID{p.get('pid'):5}|CPU{cpu:5.1f}%|{name}")
+        return lines
+
+# -------------------------
+# Standalone compact runner
+# -------------------------
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO,
+                        format="%(asctime)s - %(levelname)s - %(message)s",
+                        datefmt="%H:%M:%S")
+    protector = WebAttackProtector()
+
+    # sample requests to test (compact)
+    sample_requests = [
+        {"method": "GET", "url": "/search?q=normal+term", "body": ""},
+        {"method": "GET", "url": "/product?id=123", "body": ""},
+        {"method": "GET", "url": "/login?user=admin'--&pass=abc", "body": ""},
+        {"method": "POST", "url": "/comment", "body": "<script>alert(1)</script>Nice post!"},
+        {"method": "GET", "url": "/download?file=../../etc/passwd", "body": ""},
+        {"method": "POST", "url": "/submit", "body": "name=foo&comment=hello"},
+    ]
+
+    try:
+        while True:
+            os.system("clear")
+            print("🛡️ KAVACH-V1 :: Web Protector (compact)\n" + "-"*72)
+
+            # Analyze sample requests and print compact lines
+            for req in sample_requests:
+                url_full = req["url"]
+                # ensure URL has path root for display clarity
+                if not url_full.startswith("/"):
+                    url_full = "/" + url_full
+                result = protector.analyze_request(method=req.get("method","GET"), url=url_full, body=req.get("body",""))
+                print(protector.compact_output(result))
+
+            # print a one-line processes summary
+            print("\nTop processes:", " | ".join(protector.top_processes_summary(4)))
+
+            print("\nRefresh every 6s (Ctrl+C to stop).")
+            time.sleep(6)
+
+    except KeyboardInterrupt:
+        print("\n🛑 Web Protector stopped by user.")

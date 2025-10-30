@@ -1,0 +1,4 @@
+System: posix.uname_result(sysname='Linux', nodename='sonic-fedora', release='6.16.3-100.fc41.x86_64', version='#1 SMP PREEMPT_DYNAMIC Sat Aug 23 18:06:28 UTC 2025', machine='x86_64')
+Boot time: 2025-10-28 10:00:54
+CPU usage: 9.7%
+Memory: svmem(total=16050302976, available=10775302144, percent=32.9, used=4792270848, free=4210475008, active=7169699840, inactive=2814464000, buffers=7946240, cached=7039610880, shared=133902336, slab=683819008)

@@ -1,0 +1,443 @@
+[
+  {
+    "fd": -1,
+    "family": "10",
+    "type": "2",
+    "laddr": ":::5355",
+    "raddr": "",
+    "status": "NONE",
+    "pid": null
+  },
+  {
+    "fd": 48,
+    "family": "2",
+    "type": "1",
+    "laddr": "192.168.100.148:50096",
+    "raddr": "151.101.193.91:443",
+    "status": "CLOSE_WAIT",
+    "pid": 3492
+  },
+  {
+    "fd": 30,
+    "family": "2",
+    "type": "1",
+    "laddr": "192.168.100.148:42136",
+    "raddr": "172.64.155.209:443",
+    "status": "ESTABLISHED",
+    "pid": 4822
+  },
+  {
+    "fd": -1,
+    "family": "10",
+    "type": "1",
+    "laddr": ":::3306",
+    "raddr": "",
+    "status": "LISTEN",
+    "pid": null
+  },
+  {
+    "fd": -1,
+    "family": "10",
+    "type": "2",
+    "laddr": "::1:323",
+    "raddr": "",
+    "status": "NONE",
+    "pid": null
+  },
+  {
+    "fd": -1,
+    "family": "10",
+    "type": "2",
+    "laddr": ":::5353",
+    "raddr": "",
+    "status": "NONE",
+    "pid": null
+  },
+  {
+    "fd": -1,
+    "family": "10",
+    "type": "1",
+    "laddr": "::1:631",
+    "raddr": "",
+    "status": "LISTEN",
+    "pid": null
+  },
+  {
+    "fd": 12,
+    "family": "2",
+    "type": "2",
+    "laddr": "172.17.0.1:3702",
+    "raddr": "",
+    "status": "NONE",
+    "pid": 14149
+  },
+  {
+    "fd": -1,
+    "family": "10",
+    "type": "1",
+    "laddr": ":::33060",
+    "raddr": "",
+    "status": "LISTEN",
+    "pid": null
+  },
+  {
+    "fd": -1,
+    "family": "2",
+    "type": "2",
+    "laddr": "127.0.0.1:323",
+    "raddr": "",
+    "status": "NONE",
+    "pid": null
+  },
+  {
+    "fd": -1,
+    "family": "2",
+    "type": "2",
+    "laddr": "127.0.0.54:53",
+    "raddr": "",
+    "status": "NONE",
+    "pid": null
+  },
+  {
+    "fd": 25,
+    "family": "2",
+    "type": "1",
+    "laddr": "192.168.100.148:51672",
+    "raddr": "142.251.222.78:443",
+    "status": "ESTABLISHED",
+    "pid": 4822
+  },
+  {
+    "fd": -1,
+    "family": "2",
+    "type": "1",
+    "laddr": "0.0.0.0:5355",
+    "raddr": "",
+    "status": "LISTEN",
+    "pid": null
+  },
+  {
+    "fd": -1,
+    "family": "2",
+    "type": "1",
+    "laddr": "0.0.0.0:27500",
+    "raddr": "",
+    "status": "LISTEN",
+    "pid": null
+  },
+  {
+    "fd": 20,
+    "family": "2",
+    "type": "2",
+    "laddr": "172.168.3.6:3702",
+    "raddr": "",
+    "status": "NONE",
+    "pid": 14149
+  },
+  {
+    "fd": -1,
+    "family": "2",
+    "type": "1",
+    "laddr": "127.0.0.53:53",
+    "raddr": "",
+    "status": "LISTEN",
+    "pid": null
+  },
+  {
+    "fd": 34,
+    "family": "2",
+    "type": "1",
+    "laddr": "192.168.100.148:53952",
+    "raddr": "104.18.32.47:443",
+    "status": "ESTABLISHED",
+    "pid": 4822
+  },
+  {
+    "fd": -1,
+    "family": "2",
+    "type": "1",
+    "laddr": "127.0.0.1:631",
+    "raddr": "",
+    "status": "LISTEN",
+    "pid": null
+  },
+  {
+    "fd": -1,
+    "family": "10",
+    "type": "1",
+    "laddr": ":::5355",
+    "raddr": "",
+    "status": "LISTEN",
+    "pid": null
+  },
+  {
+    "fd": 18,
+    "family": "2",
+    "type": "2",
+    "laddr": "239.255.255.250:3702",
+    "raddr": "",
+    "status": "NONE",
+    "pid": 14149
+  },
+  {
+    "fd": -1,
+    "family": "2",
+    "type": "2",
+    "laddr": "127.0.0.53:53",
+    "raddr": "",
+    "status": "NONE",
+    "pid": null
+  },
+  {
+    "fd": -1,
+    "family": "10",
+    "type": "2",
+    "laddr": ":::51482",
+    "raddr": "",
+    "status": "NONE",
+    "pid": null
+  },
+  {
+    "fd": 13,
+    "family": "2",
+    "type": "2",
+    "laddr": "239.255.255.250:3702",
+    "raddr": "",
+    "status": "NONE",
+    "pid": 14149
+  },
+  {
+    "fd": 14,
+    "family": "2",
+    "type": "2",
+    "laddr": "0.0.0.0:36210",
+    "raddr": "",
+    "status": "NONE",
+    "pid": 14149
+  },
+  {
+    "fd": 35,
+    "family": "2",
+    "type": "1",
+    "laddr": "192.168.100.148:54144",
+    "raddr": "51.79.152.81:443",
+    "status": "ESTABLISHED",
+    "pid": 4822
+  },
+  {
+    "fd": 29,
+    "family": "2",
+    "type": "1",
+    "laddr": "192.168.100.148:49242",
+    "raddr": "172.64.148.235:443",
+    "status": "ESTABLISHED",
+    "pid": 4822
+  },
+  {
+    "fd": 438,
+    "family": "2",
+    "type": "2",
+    "laddr": "224.0.0.251:5353",
+    "raddr": "",
+    "status": "NONE",
+    "pid": 4718
+  },
+  {
+    "fd": 85,
+    "family": "2",
+    "type": "2",
+    "laddr": "224.0.0.251:5353",
+    "raddr": "",
+    "status": "NONE",
+    "pid": 4822
+  },
+  {
+    "fd": 42,
+    "family": "2",
+    "type": "2",
+    "laddr": "192.168.100.148:56117",
+    "raddr": "172.217.174.67:443",
+    "status": "NONE",
+    "pid": 4822
+  },
+  {
+    "fd": 19,
+    "family": "2",
+    "type": "2",
+    "laddr": "0.0.0.0:60525",
+    "raddr": "",
+    "status": "NONE",
+    "pid": 14149
+  },
+  {
+    "fd": 22,
+    "family": "10",
+    "type": "2",
+    "laddr": ":::45776",
+    "raddr": "",
+    "status": "NONE",
+    "pid": 14149
+  },
+  {
+    "fd": 8,
+    "family": "10",
+    "type": "2",
+    "laddr": ":::59885",
+    "raddr": "",
+    "status": "NONE",
+    "pid": 14149
+  },
+  {
+    "fd": 9,
+    "family": "10",
+    "type": "2",
+    "laddr": "fe80::5651:7593:5e79:b1fe:3702",
+    "raddr": "",
+    "status": "NONE",
+    "pid": 14149
+  },
+  {
+    "fd": -1,
+    "family": "2",
+    "type": "2",
+    "laddr": "172.168.3.6:68",
+    "raddr": "172.168.0.1:67",
+    "status": "NONE",
+    "pid": null
+  },
+  {
+    "fd": 15,
+    "family": "2",
+    "type": "2",
+    "laddr": "192.168.100.148:3702",
+    "raddr": "",
+    "status": "NONE",
+    "pid": 14149
+  },
+  {
+    "fd": 43,
+    "family": "2",
+    "type": "1",
+    "laddr": "192.168.100.148:57664",
+    "raddr": "151.101.1.91:443",
+    "status": "CLOSE_WAIT",
+    "pid": 3492
+  },
+  {
+    "fd": 21,
+    "family": "10",
+    "type": "2",
+    "laddr": "ff02::c:3702",
+    "raddr": "",
+    "status": "NONE",
+    "pid": 14149
+  },
+  {
+    "fd": 11,
+    "family": "2",
+    "type": "2",
+    "laddr": "0.0.0.0:46255",
+    "raddr": "",
+    "status": "NONE",
+    "pid": 14149
+  },
+  {
+    "fd": -1,
+    "family": "2",
+    "type": "2",
+    "laddr": "0.0.0.0:5353",
+    "raddr": "",
+    "status": "NONE",
+    "pid": null
+  },
+  {
+    "fd": -1,
+    "family": "2",
+    "type": "2",
+    "laddr": "192.168.100.148:68",
+    "raddr": "192.168.100.1:67",
+    "status": "NONE",
+    "pid": null
+  },
+  {
+    "fd": 10,
+    "family": "2",
+    "type": "2",
+    "laddr": "239.255.255.250:3702",
+    "raddr": "",
+    "status": "NONE",
+    "pid": 14149
+  },
+  {
+    "fd": -1,
+    "family": "2",
+    "type": "2",
+    "laddr": "0.0.0.0:5355",
+    "raddr": "",
+    "status": "NONE",
+    "pid": null
+  },
+  {
+    "fd": -1,
+    "family": "2",
+    "type": "1",
+    "laddr": "127.0.0.54:53",
+    "raddr": "",
+    "status": "LISTEN",
+    "pid": null
+  },
+  {
+    "fd": 269,
+    "family": "2",
+    "type": "2",
+    "laddr": "224.0.0.251:5353",
+    "raddr": "",
+    "status": "NONE",
+    "pid": 4718
+  },
+  {
+    "fd": -1,
+    "family": "10",
+    "type": "1",
+    "laddr": ":::80",
+    "raddr": "",
+    "status": "LISTEN",
+    "pid": null
+  },
+  {
+    "fd": 7,
+    "family": "10",
+    "type": "2",
+    "laddr": "ff02::c:3702",
+    "raddr": "",
+    "status": "NONE",
+    "pid": 14149
+  },
+  {
+    "fd": 23,
+    "family": "10",
+    "type": "2",
+    "laddr": "fe80::b6c6:a35:e895:6c00:3702",
+    "raddr": "",
+    "status": "NONE",
+    "pid": 14149
+  },
+  {
+    "fd": 26,
+    "family": "2",
+    "type": "1",
+    "laddr": "192.168.100.148:59914",
+    "raddr": "64.233.170.188:5228",
+    "status": "ESTABLISHED",
+    "pid": 4822
+  },
+  {
+    "fd": -1,
+    "family": "2",
+    "type": "2",
+    "laddr": "0.0.0.0:39726",
+    "raddr": "",
+    "status": "NONE",
+    "pid": null
+  }
+]

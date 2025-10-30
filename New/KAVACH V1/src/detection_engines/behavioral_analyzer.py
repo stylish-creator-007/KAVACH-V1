@@ -2,230 +2,197 @@ import psutil
 import time
 import logging
 from collections import defaultdict, deque
-from datetime import datetime, timedelta
+from datetime import datetime
+
 
 class BehavioralAnalyzer:
+    """
+    Monitors behavioral patterns of system processes, users, and networks.
+    Detects anomalies based on CPU, memory, and process activity changes.
+    """
+
     def __init__(self):
         self.logger = logging.getLogger(__name__)
         self.process_behavior = defaultdict(lambda: deque(maxlen=100))
         self.network_behavior = defaultdict(lambda: deque(maxlen=100))
         self.user_behavior = defaultdict(lambda: deque(maxlen=100))
         self.anomaly_threshold = 3.0  # Standard deviations for anomaly detection
-        
+
+    # -------------------------------------------------------------------------
+    # MAIN ENTRY
+    # -------------------------------------------------------------------------
+
     def detect_anomalies(self):
-        """Detect behavioral anomalies across system"""
+        """Run all anomaly detectors and collect results."""
         anomalies = []
-        
+
         try:
             anomalies.extend(self.detect_process_anomalies())
             anomalies.extend(self.detect_network_anomalies())
             anomalies.extend(self.detect_user_anomalies())
             anomalies.extend(self.detect_system_anomalies())
-            
         except Exception as e:
             self.logger.error(f"Behavioral analysis error: {e}")
-        
+
         return anomalies
-    
+
+    # -------------------------------------------------------------------------
+    # PROCESS MONITORING
+    # -------------------------------------------------------------------------
+
     def detect_process_anomalies(self):
-        """Detect anomalous process behavior"""
+        """Detect anomalous process behavior using CPU and memory metrics."""
         anomalies = []
         current_time = time.time()
-        
+
         for process in psutil.process_iter(['pid', 'name', 'cpu_percent', 'memory_percent']):
             try:
-                process_info = process.info
-                pid = process_info['pid']
-                name = process_info['name']
-                
-                # Track process behavior
-                behavior_data = {
-                    'timestamp': current_time,
-                    'cpu': process_info['cpu_percent'] or 0,
-                    'memory': process_info['memory_percent'] or 0,
-                    'name': name
-                }
-                
-                self.process_behavior[pid].append(behavior_data)
-                
-                # Check for anomalies
-                if len(self.process_behavior[pid]) > 10:
-                    recent_cpu = [data['cpu'] for data in list(self.process_behavior[pid])[-5:]]
-                    avg_cpu = sum(recent_cpu) / len(recent_cpu)
-                    
-                    # Sudden CPU spike
-                    if avg_cpu > 80 and max(recent_cpu) > 90:
-                        anomalies.append({
-                            'type': 'PROCESS_CPU_SPIKE',
-                            'pid': pid,
-                            'process_name': name,
-                            'cpu_usage': avg_cpu,
-                            'confidence': 'HIGH'
-                        })
-                        self.logger.warning(f"Process CPU spike: {name} (PID: {pid}) - CPU: {avg_cpu}%")
-                    
-                    # Sudden memory spike
-                    recent_memory = [data['memory'] for data in list(self.process_behavior[pid])[-5:]]
-                    avg_memory = sum(recent_memory) / len(recent_memory)
-                    
-                    if avg_memory > 50 and max(recent_memory) > 70:
-                        anomalies.append({
-                            'type': 'PROCESS_MEMORY_SPIKE',
-                            'pid': pid,
-                            'process_name': name,
-                            'memory_usage': avg_memory,
-                            'confidence': 'HIGH'
-                        })
-                        self.logger.warning(f"Process memory spike: {name} (PID: {pid}) - Memory: {avg_memory}%")
-                        
+                info = process.info
+                pid = info['pid']
+                name = info['name']
+                cpu = info['cpu_percent']
+                mem = info['memory_percent']
+
+                self.process_behavior[pid].append((current_time, cpu, mem))
+
+                # Check CPU spike anomaly
+                if cpu > 90:
+                    anomalies.append(f"High CPU usage by {name} (PID {pid}): {cpu}%")
+
+                # Check memory usage anomaly
+                if mem > 80:
+                    anomalies.append(f"High memory usage by {name} (PID {pid}): {mem}%")
+
             except (psutil.NoSuchProcess, psutil.AccessDenied):
                 continue
-        
+            except Exception as e:
+                self.logger.error(f"Process anomaly detection error: {e}")
+
         return anomalies
-    
+
+    # -------------------------------------------------------------------------
+    # NETWORK MONITORING
+    # -------------------------------------------------------------------------
+
     def detect_network_anomalies(self):
-        """Detect anomalous network behavior"""
+        """Detect anomalies in network I/O patterns."""
         anomalies = []
-        
         try:
-            connections = psutil.net_connections()
-            current_time = time.time()
-            
-            # Track connection patterns
-            connection_data = {
-                'timestamp': current_time,
-                'total_connections': len(connections),
-                'established': len([c for c in connections if c.status == 'ESTABLISHED']),
-                'listening': len([c for c in connections if c.status == 'LISTEN']),
-            }
-            
-            self.network_behavior['system'].append(connection_data)
-            
-            # Check for connection floods
-            if len(self.network_behavior['system']) > 5:
-                recent_connections = [data['total_connections'] for data in list(self.network_behavior['system'])[-5:]]
-                avg_connections = sum(recent_connections) / len(recent_connections)
-                
-                if avg_connections > 1000 and max(recent_connections) > 1500:
-                    anomalies.append({
-                        'type': 'NETWORK_CONNECTION_FLOOD',
-                        'connection_count': avg_connections,
-                        'confidence': 'HIGH'
-                    })
-            
-            # Analyze per-process network activity
-            process_connections = defaultdict(list)
-            for conn in connections:
-                if conn.pid:
-                    process_connections[conn.pid].append(conn)
-            
-            for pid, conns in process_connections.items():
-                if len(conns) > 50:  # Process with many connections
-                    try:
-                        process = psutil.Process(pid)
-                        process_name = process.name()
-                        
-                        anomalies.append({
-                            'type': 'PROCESS_NETWORK_ACTIVITY',
-                            'pid': pid,
-                            'process_name': process_name,
-                            'connection_count': len(conns),
-                            'confidence': 'MEDIUM'
-                        })
-                        
-                    except (psutil.NoSuchProcess, psutil.AccessDenied):
-                        continue
-                        
+            net_io = psutil.net_io_counters(pernic=True)
+            timestamp = datetime.now().strftime("%H:%M:%S")
+
+            for iface, stats in net_io.items():
+                key = iface
+                self.network_behavior[key].append((timestamp, stats.bytes_sent, stats.bytes_recv))
+
+                # Check for high network usage
+                if stats.bytes_sent > 5_000_000 or stats.bytes_recv > 5_000_000:
+                    anomalies.append(
+                        f"High network traffic on {iface} (Sent: {stats.bytes_sent / 1e6:.2f} MB, "
+                        f"Recv: {stats.bytes_recv / 1e6:.2f} MB)"
+                    )
+
         except Exception as e:
-            self.logger.error(f"Network behavior analysis error: {e}")
-        
+            self.logger.error(f"Network anomaly detection error: {e}")
+
         return anomalies
-    
+
+    # -------------------------------------------------------------------------
+    # USER BEHAVIOR MONITORING
+    # -------------------------------------------------------------------------
+
     def detect_user_anomalies(self):
-        """Detect anomalous user behavior"""
+        """Detect anomalies in user sessions or activity."""
         anomalies = []
-        
         try:
-            # Track login sessions (simplified)
             users = psutil.users()
-            current_time = time.time()
-            
-            user_data = {
-                'timestamp': current_time,
-                'active_users': len(users),
-                'user_names': [user.name for user in users]
-            }
-            
-            self.user_behavior['sessions'].append(user_data)
-            
-            # Check for unusual login patterns
-            if len(self.user_behavior['sessions']) > 10:
-                recent_users = [data['active_users'] for data in list(self.user_behavior['sessions'])[-10:]]
-                avg_users = sum(recent_users) / len(recent_users)
-                
-                # Sudden increase in active users
-                if len(users) > avg_users * 2 and len(users) > 1:
-                    anomalies.append({
-                        'type': 'UNUSUAL_USER_ACTIVITY',
-                        'active_users': len(users),
-                        'average_users': avg_users,
-                        'confidence': 'MEDIUM'
-                    })
-                    
+            for user in users:
+                self.user_behavior[user.name].append(datetime.now())
+                # Example check: multiple active sessions
+                if len(self.user_behavior[user.name]) > 5:
+                    anomalies.append(f"Multiple logins detected for user: {user.name}")
+
         except Exception as e:
-            self.logger.error(f"User behavior analysis error: {e}")
-        
+            self.logger.error(f"User anomaly detection error: {e}")
+
         return anomalies
-    
+
+    # -------------------------------------------------------------------------
+    # SYSTEM-WIDE ANOMALIES
+    # -------------------------------------------------------------------------
+
     def detect_system_anomalies(self):
-        """Detect system-wide anomalies"""
+        """Detect system-level anomalies like high CPU load or low memory."""
         anomalies = []
-        
         try:
-            # CPU usage anomalies
             cpu_percent = psutil.cpu_percent(interval=1)
-            if cpu_percent > 90:
-                anomalies.append({
-                    'type': 'HIGH_SYSTEM_CPU',
-                    'cpu_usage': cpu_percent,
-                    'confidence': 'HIGH'
-                })
-            
-            # Memory usage anomalies
             memory = psutil.virtual_memory()
-            if memory.percent > 90:
-                anomalies.append({
-                    'type': 'HIGH_SYSTEM_MEMORY',
-                    'memory_usage': memory.percent,
-                    'confidence': 'HIGH'
-                })
-            
-            # Disk activity anomalies
-            disk_io = psutil.disk_io_counters()
-            if disk_io and disk_io.write_bytes > 100 * 1024 * 1024:  # 100MB written
-                anomalies.append({
-                    'type': 'HIGH_DISK_WRITE',
-                    'bytes_written': disk_io.write_bytes,
-                    'confidence': 'MEDIUM'
-                })
-                
+
+            if cpu_percent > 85:
+                anomalies.append(f"System CPU usage high: {cpu_percent}%")
+
+            if memory.percent > 85:
+                anomalies.append(f"System memory usage high: {memory.percent}%")
+
         except Exception as e:
             self.logger.error(f"System anomaly detection error: {e}")
-        
+
         return anomalies
-    
-    def calculate_behavior_baseline(self):
-        """Calculate baseline behavior patterns"""
-        # This would establish normal behavior patterns over time
-        # For now, it's a placeholder for more advanced analytics
-        pass
-    
-    def is_behavior_anomalous(self, current_behavior, baseline):
-        """Check if current behavior deviates from baseline"""
-        # Simplified anomaly detection
-        if not baseline:
-            return False
-        
-        # Calculate deviation (simplified)
-        deviation = abs(current_behavior - baseline) / baseline if baseline > 0 else 0
-        return deviation > self.anomaly_threshold
+
+    # -------------------------------------------------------------------------
+    # LOGGING & UTILITIES
+    # -------------------------------------------------------------------------
+
+    def summarize_behavior(self):
+        """Summarize behavioral statistics for reporting."""
+        summary = {
+            "total_tracked_processes": len(self.process_behavior),
+            "total_network_interfaces": len(self.network_behavior),
+            "tracked_users": len(self.user_behavior),
+        }
+        self.logger.info(f"Behavior summary: {summary}")
+        return summary
+
+
+# =============================================================================
+# TEST RUNNER (for standalone execution)
+# =============================================================================
+if __name__ == "__main__":
+    import time
+    import os
+
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s - %(levelname)s - %(message)s",
+        datefmt="%H:%M:%S"
+    )
+
+    analyzer = BehavioralAnalyzer()
+
+    print("\n🧠 Starting real-time Behavioral Analysis Monitor...")
+    print("Press Ctrl + C to stop.\n")
+
+    try:
+        while True:
+            anomalies = analyzer.detect_anomalies()
+            summary = analyzer.summarize_behavior()
+
+            os.system('clear')  # clears terminal for a live dashboard feel
+            print("🧠 KAVACH-V1 :: Behavioral Analyzer\n" + "-" * 50)
+
+            if anomalies:
+                print("\n⚠️  Detected Anomalies:")
+                for a in anomalies:
+                    print(f"  • {a}")
+            else:
+                print("\n✅ No anomalies detected this cycle.")
+
+            print("\n📊 Summary:")
+            for key, value in summary.items():
+                print(f"  • {key}: {value}")
+
+            print("\n" + "-" * 50)
+            time.sleep(5)  # wait 5 seconds before next scan
+
+    except KeyboardInterrupt:
+        print("\n🛑 Behavioral Analyzer stopped by user.\n")

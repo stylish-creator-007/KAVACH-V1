@@ -1,0 +1,4707 @@
+[
+  {
+    "pid": 1,
+    "name": "systemd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.17868941192503007,
+    "cmdline": [
+      "/usr/lib/systemd/systemd",
+      "--switched-root",
+      "--system",
+      "--deserialize=50",
+      "rhgb"
+    ]
+  },
+  {
+    "pid": 2,
+    "name": "kthreadd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 3,
+    "name": "pool_workqueue_release",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 4,
+    "name": "kworker/R-rcu_gp",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 5,
+    "name": "kworker/R-sync_wq",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 6,
+    "name": "kworker/R-kvfree_rcu_reclaim",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 7,
+    "name": "kworker/R-slub_flushwq",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 8,
+    "name": "kworker/R-netns",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 10,
+    "name": "kworker/0:0H-events_highpri",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 13,
+    "name": "kworker/R-mm_percpu_wq",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 15,
+    "name": "ksoftirqd/0",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 16,
+    "name": "rcu_preempt",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 17,
+    "name": "rcu_exp_par_gp_kthread_worker/0",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 18,
+    "name": "rcu_exp_gp_kthread_worker",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 19,
+    "name": "migration/0",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 20,
+    "name": "idle_inject/0",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21,
+    "name": "cpuhp/0",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 22,
+    "name": "cpuhp/2",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 23,
+    "name": "idle_inject/2",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 24,
+    "name": "migration/2",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 25,
+    "name": "ksoftirqd/2",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 27,
+    "name": "kworker/2:0H-events_highpri",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 28,
+    "name": "cpuhp/4",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 29,
+    "name": "idle_inject/4",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 30,
+    "name": "migration/4",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 31,
+    "name": "ksoftirqd/4",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 33,
+    "name": "kworker/4:0H-events_highpri",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 34,
+    "name": "cpuhp/6",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 35,
+    "name": "idle_inject/6",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 36,
+    "name": "migration/6",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 37,
+    "name": "ksoftirqd/6",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 39,
+    "name": "kworker/6:0H-events_highpri",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 40,
+    "name": "cpuhp/8",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 41,
+    "name": "idle_inject/8",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 42,
+    "name": "migration/8",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 43,
+    "name": "ksoftirqd/8",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 45,
+    "name": "kworker/8:0H-events_highpri",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 46,
+    "name": "cpuhp/10",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 47,
+    "name": "idle_inject/10",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 48,
+    "name": "migration/10",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 49,
+    "name": "ksoftirqd/10",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 51,
+    "name": "kworker/10:0H-events_highpri",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 52,
+    "name": "cpuhp/1",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 53,
+    "name": "idle_inject/1",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 54,
+    "name": "migration/1",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 55,
+    "name": "ksoftirqd/1",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 57,
+    "name": "kworker/1:0H-events_highpri",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 58,
+    "name": "cpuhp/3",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 59,
+    "name": "idle_inject/3",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 60,
+    "name": "migration/3",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 61,
+    "name": "ksoftirqd/3",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 63,
+    "name": "kworker/3:0H-events_highpri",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 64,
+    "name": "cpuhp/5",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 65,
+    "name": "idle_inject/5",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 66,
+    "name": "migration/5",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 67,
+    "name": "ksoftirqd/5",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 69,
+    "name": "kworker/5:0H-events_highpri",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 70,
+    "name": "cpuhp/7",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 71,
+    "name": "idle_inject/7",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 72,
+    "name": "migration/7",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 73,
+    "name": "ksoftirqd/7",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 75,
+    "name": "kworker/7:0H-events_highpri",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 76,
+    "name": "cpuhp/9",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 77,
+    "name": "idle_inject/9",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 78,
+    "name": "migration/9",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 79,
+    "name": "ksoftirqd/9",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 81,
+    "name": "kworker/9:0H-events_highpri",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 82,
+    "name": "cpuhp/11",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 83,
+    "name": "idle_inject/11",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 84,
+    "name": "migration/11",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 85,
+    "name": "ksoftirqd/11",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 87,
+    "name": "kworker/11:0H-events_highpri",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 88,
+    "name": "kdevtmpfs",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 89,
+    "name": "kworker/R-inet_frag_wq",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 90,
+    "name": "rcu_tasks_kthread",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 91,
+    "name": "rcu_tasks_rude_kthread",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 92,
+    "name": "rcu_tasks_trace_kthread",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 93,
+    "name": "kauditd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 94,
+    "name": "oom_reaper",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 96,
+    "name": "kworker/R-writeback",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 97,
+    "name": "kcompactd0",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 98,
+    "name": "ksmd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 99,
+    "name": "khugepaged",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 100,
+    "name": "kworker/R-kblockd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 101,
+    "name": "kworker/R-blkcg_punt_bio",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 102,
+    "name": "kworker/R-kintegrityd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 103,
+    "name": "irq/9-acpi",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 106,
+    "name": "kworker/R-tpm_dev_wq",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 107,
+    "name": "kworker/R-ata_sff",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 108,
+    "name": "kworker/R-md",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 109,
+    "name": "kworker/R-md_bitmap",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 110,
+    "name": "kworker/R-edac-poller",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 111,
+    "name": "kworker/R-devfreq_wq",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 112,
+    "name": "watchdogd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 113,
+    "name": "kworker/1:1H-acpi_thermal_pm",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 114,
+    "name": "irq/25-AMD-Vi0-Evt",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 115,
+    "name": "irq/26-AMD-Vi0-PPR",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 116,
+    "name": "irq/27-AMD-Vi0-GA",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 119,
+    "name": "kswapd0",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 120,
+    "name": "kworker/R-cryptd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 130,
+    "name": "kworker/R-kthrotld",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 133,
+    "name": "irq/37-pciehp",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 135,
+    "name": "kworker/R-acpi_thermal_pm",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 137,
+    "name": "kworker/R-dm_bufio_cache",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 139,
+    "name": "kworker/R-mld",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 140,
+    "name": "kworker/R-ipv6_addrconf",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 142,
+    "name": "kworker/6:1H-kblockd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 146,
+    "name": "kworker/R-kstrp",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 149,
+    "name": "kworker/5:1-cgroup_destroy",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 239,
+    "name": "irq/28-ACPI:Event",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 240,
+    "name": "kworker/0:1H-kblockd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 241,
+    "name": "irq/29-ACPI:Event",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 242,
+    "name": "irq/30-ACPI:Event",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 243,
+    "name": "irq/31-ACPI:Event",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 244,
+    "name": "irq/32-ACPI:Event",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 245,
+    "name": "irq/33-ACPI:Event",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 246,
+    "name": "irq/34-ACPI:Event",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 247,
+    "name": "irq/35-ACPI:Event",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 248,
+    "name": "irq/36-ACPI:Event",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 250,
+    "name": "kworker/2:1H-acpi_thermal_pm",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 251,
+    "name": "kworker/4:1H-kblockd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 291,
+    "name": "kworker/8:1H-kblockd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 296,
+    "name": "kworker/11:1H-kblockd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 301,
+    "name": "kworker/10:1H-kblockd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 428,
+    "name": "kworker/9:1H-kblockd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 429,
+    "name": "kworker/5:1H-kblockd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 430,
+    "name": "kworker/3:1H-kblockd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 431,
+    "name": "kworker/7:1H-kblockd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 464,
+    "name": "irq/64-ELAN0787:00",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 493,
+    "name": "kworker/R-nvme-wq",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 494,
+    "name": "kworker/R-nvme-reset-wq",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 495,
+    "name": "kworker/R-nvme-delete-wq",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 496,
+    "name": "kworker/R-nvme-auth-wq",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 511,
+    "name": "kworker/R-btrfs-worker",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 512,
+    "name": "kworker/R-btrfs-delalloc",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 513,
+    "name": "kworker/R-btrfs-flush_delalloc",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 514,
+    "name": "kworker/R-btrfs-cache",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 515,
+    "name": "kworker/R-btrfs-fixup",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 516,
+    "name": "kworker/R-btrfs-endio",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 517,
+    "name": "kworker/R-btrfs-endio-meta",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 518,
+    "name": "kworker/R-btrfs-rmw",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 519,
+    "name": "kworker/R-btrfs-endio-write",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 520,
+    "name": "kworker/R-btrfs-compressed-write",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 521,
+    "name": "kworker/R-btrfs-freespace-write",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 522,
+    "name": "kworker/R-btrfs-delayed-meta",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 523,
+    "name": "kworker/R-btrfs-qgroup-rescan",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 524,
+    "name": "btrfs-cleaner",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 525,
+    "name": "btrfs-transaction",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 561,
+    "name": "kworker/R-amdgpu-reset-dev",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 562,
+    "name": "kworker/R-ttm",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 563,
+    "name": "kworker/R-amdgpu_dm_hpd_rx_offload_wq",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 564,
+    "name": "kworker/R-amdgpu_dm_hpd_rx_offload_wq",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 565,
+    "name": "kworker/R-dm_vblank_control_workqueue",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 566,
+    "name": "card1-crtc0",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 567,
+    "name": "card1-crtc1",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 568,
+    "name": "card1-crtc2",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 569,
+    "name": "card1-crtc3",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 570,
+    "name": "kworker/R-gfx",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 571,
+    "name": "kworker/R-comp_1.0.0",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 572,
+    "name": "kworker/R-comp_1.1.0",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 573,
+    "name": "kworker/R-comp_1.2.0",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 574,
+    "name": "kworker/R-comp_1.3.0",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 575,
+    "name": "kworker/R-comp_1.0.1",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 576,
+    "name": "kworker/R-comp_1.1.1",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 577,
+    "name": "kworker/R-comp_1.2.1",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 578,
+    "name": "kworker/R-comp_1.3.1",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 579,
+    "name": "kworker/R-sdma0",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 580,
+    "name": "kworker/R-vcn_dec",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 581,
+    "name": "kworker/R-vcn_enc0",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 582,
+    "name": "kworker/R-vcn_enc1",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 583,
+    "name": "kworker/R-jpeg_dec",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 636,
+    "name": "psimon",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 651,
+    "name": "systemd-journald",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.2463167957584105,
+    "cmdline": [
+      "/usr/lib/systemd/systemd-journald"
+    ]
+  },
+  {
+    "pid": 686,
+    "name": "systemd-nsresourced",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.05040154078148163,
+    "cmdline": [
+      "/usr/lib/systemd/systemd-nsresourced"
+    ]
+  },
+  {
+    "pid": 687,
+    "name": "systemd-userdbd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.041724819836821504,
+    "cmdline": [
+      "/usr/lib/systemd/systemd-userdbd"
+    ]
+  },
+  {
+    "pid": 706,
+    "name": "systemd-udevd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0890129489852192,
+    "cmdline": [
+      "/usr/lib/systemd/systemd-udevd"
+    ]
+  },
+  {
+    "pid": 707,
+    "name": "psimon",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 853,
+    "name": "nv_queue",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 854,
+    "name": "nv_queue",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 855,
+    "name": "nv_open_q",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 859,
+    "name": "kworker/R-cfg80211",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 875,
+    "name": "UVM global queue",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 876,
+    "name": "UVM deferred release queue",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 877,
+    "name": "UVM Tools Event Queue",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 881,
+    "name": "nvidia-modeset/kthread_q",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 882,
+    "name": "nvidia-modeset/deferred_close_kthread_q",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 884,
+    "name": "jbd2/nvme0n1p7-8",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 885,
+    "name": "kworker/R-ext4-rsv-conversion",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 887,
+    "name": "irq/90-nvidia",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 889,
+    "name": "nvidia",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 890,
+    "name": "nv_queue",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 956,
+    "name": "napi/phy0-0",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 957,
+    "name": "napi/phy0-0",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 958,
+    "name": "napi/phy0-0",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 969,
+    "name": "systemd-oomd",
+    "user": "systemd-oom",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.04784956403305218,
+    "cmdline": [
+      "/usr/lib/systemd/systemd-oomd"
+    ]
+  },
+  {
+    "pid": 972,
+    "name": "systemd-resolved",
+    "user": "systemd-resolve",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.10720854320152118,
+    "cmdline": [
+      "/usr/lib/systemd/systemd-resolved"
+    ]
+  },
+  {
+    "pid": 973,
+    "name": "auditd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.018246633751270565,
+    "cmdline": [
+      "/usr/sbin/auditd"
+    ]
+  },
+  {
+    "pid": 1007,
+    "name": "kworker/R-rpciod",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 1008,
+    "name": "kworker/R-xprtiod",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 1012,
+    "name": "dbus-broker-launch",
+    "user": "dbus",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.029653969816750208,
+    "cmdline": [
+      "/usr/bin/dbus-broker-launch",
+      "--scope",
+      "system",
+      "--audit"
+    ]
+  },
+  {
+    "pid": 1014,
+    "name": "dbus-broker",
+    "user": "dbus",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0547399012538117,
+    "cmdline": [
+      "dbus-broker",
+      "--log",
+      "4",
+      "--controller",
+      "9",
+      "--machine-id",
+      "976dc611f70443de867304ea3df3d707",
+      "--max-bytes",
+      "536870912",
+      "--max-fds",
+      "4096",
+      "--max-matches",
+      "131072",
+      "--audit"
+    ]
+  },
+  {
+    "pid": 1017,
+    "name": "avahi-daemon",
+    "user": "avahi",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.09391274434220374,
+    "cmdline": [
+      "avahi-daemon:",
+      "running",
+      "[sonic-fedora.local]"
+    ]
+  },
+  {
+    "pid": 1018,
+    "name": "bluetoothd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.033864731451658796,
+    "cmdline": [
+      "/usr/libexec/bluetooth/bluetoothd"
+    ]
+  },
+  {
+    "pid": 1027,
+    "name": "chronyd",
+    "user": "chrony",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.04052539076505966,
+    "cmdline": [
+      "/usr/sbin/chronyd",
+      "-n",
+      "-F",
+      "2"
+    ]
+  },
+  {
+    "pid": 1030,
+    "name": "low-memory-monitor",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.03659534657247831,
+    "cmdline": [
+      "/usr/libexec/low-memory-monitor"
+    ]
+  },
+  {
+    "pid": 1033,
+    "name": "nvidia-powerd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.05231552334280372,
+    "cmdline": [
+      "/usr/bin/nvidia-powerd"
+    ]
+  },
+  {
+    "pid": 1034,
+    "name": "polkitd",
+    "user": "polkitd",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0760744268706819,
+    "cmdline": [
+      "/usr/lib/polkit-1/polkitd",
+      "--no-debug",
+      "--log-level=err"
+    ]
+  },
+  {
+    "pid": 1036,
+    "name": "rtkit-daemon",
+    "user": "rtkit",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.01891014770586222,
+    "cmdline": [
+      "/usr/libexec/rtkit-daemon"
+    ]
+  },
+  {
+    "pid": 1038,
+    "name": "smartd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.03779477564424015,
+    "cmdline": [
+      "/usr/sbin/smartd",
+      "-n",
+      "-q",
+      "never",
+      "--capabilities=mail"
+    ]
+  },
+  {
+    "pid": 1041,
+    "name": "accounts-daemon",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.05463782218387452,
+    "cmdline": [
+      "/usr/libexec/accounts-daemon"
+    ]
+  },
+  {
+    "pid": 1043,
+    "name": "switcheroo-control",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.044965830307326905,
+    "cmdline": [
+      "/usr/libexec/switcheroo-control"
+    ]
+  },
+  {
+    "pid": 1045,
+    "name": "systemd-homed",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.053438393112112674,
+    "cmdline": [
+      "/usr/lib/systemd/systemd-homed"
+    ]
+  },
+  {
+    "pid": 1048,
+    "name": "systemd-logind",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.07408388500690692,
+    "cmdline": [
+      "/usr/lib/systemd/systemd-logind"
+    ]
+  },
+  {
+    "pid": 1049,
+    "name": "systemd-machined",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.04973802682688998,
+    "cmdline": [
+      "/usr/lib/systemd/systemd-machined"
+    ]
+  },
+  {
+    "pid": 1054,
+    "name": "udisksd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.1066471083168667,
+    "cmdline": [
+      "/usr/libexec/udisks2/udisksd"
+    ]
+  },
+  {
+    "pid": 1056,
+    "name": "upowerd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.07025591988426276,
+    "cmdline": [
+      "/usr/libexec/upowerd"
+    ]
+  },
+  {
+    "pid": 1065,
+    "name": "psimon",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 1071,
+    "name": "avahi-daemon",
+    "user": "avahi",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.009978229086359149,
+    "cmdline": [
+      "avahi-daemon:",
+      "chroot",
+      "helper"
+    ]
+  },
+  {
+    "pid": 1084,
+    "name": "psimon",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 1090,
+    "name": "alsactl",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.020339254684982714,
+    "cmdline": [
+      "/usr/sbin/alsactl",
+      "-s",
+      "-n",
+      "19",
+      "-c",
+      "-E",
+      "ALSA_CONFIG_PATH=/etc/alsa/alsactl.conf",
+      "--initfile=/lib/alsa/init/00main",
+      "rdaemon"
+    ]
+  },
+  {
+    "pid": 1097,
+    "name": "mt76-tx phy0",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 1106,
+    "name": "abrtd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.08669065014414841,
+    "cmdline": [
+      "/usr/sbin/abrtd",
+      "-d",
+      "-s"
+    ]
+  },
+  {
+    "pid": 1163,
+    "name": "ModemManager",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.07954511524854595,
+    "cmdline": [
+      "/usr/sbin/ModemManager"
+    ]
+  },
+  {
+    "pid": 1164,
+    "name": "firewalld",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.3101162144691467,
+    "cmdline": [
+      "/usr/bin/python3",
+      "-sP",
+      "/usr/sbin/firewalld",
+      "--nofork",
+      "--nopid"
+    ]
+  },
+  {
+    "pid": 1187,
+    "name": "abrt-dump-journal-core",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.4066319750947485,
+    "cmdline": [
+      "/usr/bin/abrt-dump-journal-core",
+      "-D",
+      "-T",
+      "-f",
+      "-e"
+    ]
+  },
+  {
+    "pid": 1188,
+    "name": "abrt-dump-journal-oops",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.41426238557255257,
+    "cmdline": [
+      "/usr/bin/abrt-dump-journal-oops",
+      "-fxtD"
+    ]
+  },
+  {
+    "pid": 1190,
+    "name": "abrt-dump-journal-xorg",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.3891254146005225,
+    "cmdline": [
+      "/usr/bin/abrt-dump-journal-xorg",
+      "-fxtD"
+    ]
+  },
+  {
+    "pid": 1209,
+    "name": "kworker/R-iprt-VBoxWQueue",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 1210,
+    "name": "iprt-VBoxTscThread",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 1217,
+    "name": "NetworkManager",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.13806194209003322,
+    "cmdline": [
+      "/usr/sbin/NetworkManager",
+      "--no-daemon"
+    ]
+  },
+  {
+    "pid": 1278,
+    "name": "wpa_supplicant",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.06979656406954546,
+    "cmdline": [
+      "/usr/sbin/wpa_supplicant",
+      "-c",
+      "/etc/wpa_supplicant/wpa_supplicant.conf",
+      "-u",
+      "-s"
+    ]
+  },
+  {
+    "pid": 1297,
+    "name": "cupsd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.07148086872350888,
+    "cmdline": [
+      "/usr/sbin/cupsd",
+      "-l"
+    ]
+  },
+  {
+    "pid": 1299,
+    "name": "gssproxy",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.05045258031645022,
+    "cmdline": [
+      "/usr/sbin/gssproxy",
+      "-i"
+    ]
+  },
+  {
+    "pid": 1304,
+    "name": "php-fpm",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.14816777001381384,
+    "cmdline": [
+      "php-fpm:",
+      "master",
+      "process",
+      "(/etc/php-fpm.conf)"
+    ]
+  },
+  {
+    "pid": 1317,
+    "name": "containerd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.3016436516643609,
+    "cmdline": [
+      "/usr/bin/containerd"
+    ]
+  },
+  {
+    "pid": 1380,
+    "name": "php-fpm",
+    "user": "apache",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.058746504748845935,
+    "cmdline": [
+      "php-fpm: pool www",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "pid": 1381,
+    "name": "php-fpm",
+    "user": "apache",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.058746504748845935,
+    "cmdline": [
+      "php-fpm: pool www",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "pid": 1382,
+    "name": "php-fpm",
+    "user": "apache",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.058746504748845935,
+    "cmdline": [
+      "php-fpm: pool www",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "pid": 1385,
+    "name": "php-fpm",
+    "user": "apache",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.05877202451633022,
+    "cmdline": [
+      "php-fpm: pool www",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "pid": 1388,
+    "name": "php-fpm",
+    "user": "apache",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.05879754428381452,
+    "cmdline": [
+      "php-fpm: pool www",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "pid": 1392,
+    "name": "mysqld",
+    "user": "mysql",
+    "cpu_percent": 0.0,
+    "memory_percent": 2.4958077401965175,
+    "cmdline": [
+      "/usr/libexec/mysqld",
+      "--basedir=/usr"
+    ]
+  },
+  {
+    "pid": 1490,
+    "name": "dockerd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.5152185857404217,
+    "cmdline": [
+      "/usr/bin/dockerd",
+      "-H",
+      "fd://",
+      "--containerd=/run/containerd/containerd.sock",
+      "--selinux-enabled",
+      "--userland-proxy-path",
+      "/usr/bin/docker-proxy",
+      "--init-path",
+      "/usr/bin/tini-static"
+    ]
+  },
+  {
+    "pid": 1491,
+    "name": "httpd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.07821808733936264,
+    "cmdline": [
+      "/usr/sbin/httpd",
+      "-DFOREGROUND"
+    ]
+  },
+  {
+    "pid": 1498,
+    "name": "crond",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.02485625352970284,
+    "cmdline": [
+      "/usr/sbin/crond",
+      "-n"
+    ]
+  },
+  {
+    "pid": 1499,
+    "name": "gdm",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.06242135126658434,
+    "cmdline": [
+      "/usr/sbin/gdm"
+    ]
+  },
+  {
+    "pid": 1553,
+    "name": "uresourced",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.04397055937543942,
+    "cmdline": [
+      "/usr/libexec/uresourced"
+    ]
+  },
+  {
+    "pid": 1561,
+    "name": "httpd",
+    "user": "apache",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.034834482616061986,
+    "cmdline": [
+      "/usr/sbin/httpd",
+      "-DFOREGROUND"
+    ]
+  },
+  {
+    "pid": 1564,
+    "name": "httpd",
+    "user": "apache",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.05688356172249243,
+    "cmdline": [
+      "/usr/sbin/httpd",
+      "-DFOREGROUND"
+    ]
+  },
+  {
+    "pid": 1565,
+    "name": "httpd",
+    "user": "apache",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.05588829079060495,
+    "cmdline": [
+      "/usr/sbin/httpd",
+      "-DFOREGROUND"
+    ]
+  },
+  {
+    "pid": 1570,
+    "name": "httpd",
+    "user": "apache",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.05583725125563636,
+    "cmdline": [
+      "/usr/sbin/httpd",
+      "-DFOREGROUND"
+    ]
+  },
+  {
+    "pid": 2087,
+    "name": "colord",
+    "user": "colord",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.07681450012772643,
+    "cmdline": [
+      "/usr/libexec/colord"
+    ]
+  },
+  {
+    "pid": 2520,
+    "name": "krfcommd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 2679,
+    "name": "lact",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.29209925862523484,
+    "cmdline": [
+      "lact",
+      "daemon"
+    ]
+  },
+  {
+    "pid": 2680,
+    "name": "power-profiles-daemon",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.04874275589500249,
+    "cmdline": [
+      "/usr/libexec/power-profiles-daemon"
+    ]
+  },
+  {
+    "pid": 2851,
+    "name": "gdm-session-worker",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.07778425129212962,
+    "cmdline": [
+      "gdm-session-worker",
+      "[pam/gdm-password]"
+    ]
+  },
+  {
+    "pid": 2867,
+    "name": "systemd",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.11259321414070732,
+    "cmdline": [
+      "/usr/lib/systemd/systemd",
+      "--user"
+    ]
+  },
+  {
+    "pid": 2869,
+    "name": "(sd-pam)",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.020007497707686887,
+    "cmdline": [
+      "(sd-pam)"
+    ]
+  },
+  {
+    "pid": 2887,
+    "name": "gnome-keyring-daemon",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.05183064776060212,
+    "cmdline": [
+      "/usr/bin/gnome-keyring-daemon",
+      "--daemonize",
+      "--login"
+    ]
+  },
+  {
+    "pid": 2901,
+    "name": "gdm-wayland-session",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0380244535515988,
+    "cmdline": [
+      "/usr/libexec/gdm-wayland-session",
+      "/usr/bin/gnome-session"
+    ]
+  },
+  {
+    "pid": 2907,
+    "name": "dbus-broker-launch",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.027255111673226525,
+    "cmdline": [
+      "/usr/bin/dbus-broker-launch",
+      "--scope",
+      "user"
+    ]
+  },
+  {
+    "pid": 2913,
+    "name": "dbus-broker",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.03539591750071647,
+    "cmdline": [
+      "dbus-broker",
+      "--log",
+      "4",
+      "--controller",
+      "9",
+      "--machine-id",
+      "976dc611f70443de867304ea3df3d707",
+      "--max-bytes",
+      "100000000000000",
+      "--max-fds",
+      "25000000000000",
+      "--max-matches",
+      "5000000000"
+    ]
+  },
+  {
+    "pid": 2916,
+    "name": "gnome-session-binary",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.09786830830226939,
+    "cmdline": [
+      "/usr/libexec/gnome-session-binary"
+    ]
+  },
+  {
+    "pid": 3232,
+    "name": "gnome-session-ctl",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.032894980287255605,
+    "cmdline": [
+      "/usr/libexec/gnome-session-ctl",
+      "--monitor"
+    ]
+  },
+  {
+    "pid": 3233,
+    "name": "uresourced",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.060915684985010966,
+    "cmdline": [
+      "/usr/libexec/uresourced",
+      "--user"
+    ]
+  },
+  {
+    "pid": 3236,
+    "name": "gnome-session-binary",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.10868868971561027,
+    "cmdline": [
+      "/usr/libexec/gnome-session-binary",
+      "--systemd-service",
+      "--session=gnome"
+    ]
+  },
+  {
+    "pid": 3239,
+    "name": "gvfsd",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.06178335707947698,
+    "cmdline": [
+      "/usr/libexec/gvfsd"
+    ]
+  },
+  {
+    "pid": 3247,
+    "name": "gvfsd-fuse",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.045705903564371445,
+    "cmdline": [
+      "/usr/libexec/gvfsd-fuse",
+      "/run/user/1000/gvfs",
+      "-f"
+    ]
+  },
+  {
+    "pid": 3257,
+    "name": "pipewire",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.08156117687980521,
+    "cmdline": [
+      "/usr/bin/pipewire"
+    ]
+  },
+  {
+    "pid": 3259,
+    "name": "wireplumber",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.17317714214842245,
+    "cmdline": [
+      "/usr/bin/wireplumber"
+    ]
+  },
+  {
+    "pid": 3304,
+    "name": "gnome-shell",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 2.5354909786345954,
+    "cmdline": [
+      "/usr/bin/gnome-shell"
+    ]
+  },
+  {
+    "pid": 3331,
+    "name": "nvidia-drm/timeline-1b1",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 3361,
+    "name": "at-spi-bus-launcher",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.04733916868336629,
+    "cmdline": [
+      "/usr/libexec/at-spi-bus-launcher"
+    ]
+  },
+  {
+    "pid": 3367,
+    "name": "dbus-broker-launch",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.026310880276307624,
+    "cmdline": [
+      "/usr/bin/dbus-broker-launch",
+      "--config-file=/usr/share/defaults/at-spi2/accessibility.conf",
+      "--scope",
+      "user"
+    ]
+  },
+  {
+    "pid": 3368,
+    "name": "dbus-broker",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.01959918142793817,
+    "cmdline": [
+      "dbus-broker",
+      "--log",
+      "4",
+      "--controller",
+      "9",
+      "--machine-id",
+      "976dc611f70443de867304ea3df3d707",
+      "--max-bytes",
+      "100000000000000",
+      "--max-fds",
+      "6400000",
+      "--max-matches",
+      "5000000000"
+    ]
+  },
+  {
+    "pid": 3369,
+    "name": "at-spi2-registryd",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.04445543495764101,
+    "cmdline": [
+      "/usr/libexec/at-spi2-registryd",
+      "--use-gnome-session"
+    ]
+  },
+  {
+    "pid": 3374,
+    "name": "xdg-permission-store",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.039249402390844935,
+    "cmdline": [
+      "/usr/libexec/xdg-permission-store"
+    ]
+  },
+  {
+    "pid": 3388,
+    "name": "gnome-shell-calendar-server",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.13742394790292586,
+    "cmdline": [
+      "/usr/libexec/gnome-shell-calendar-server"
+    ]
+  },
+  {
+    "pid": 3393,
+    "name": "dconf-service",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.039759797740530824,
+    "cmdline": [
+      "/usr/libexec/dconf-service"
+    ]
+  },
+  {
+    "pid": 3403,
+    "name": "evolution-source-registry",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.3055736958569423,
+    "cmdline": [
+      "/usr/libexec/evolution-source-registry"
+    ]
+  },
+  {
+    "pid": 3413,
+    "name": "gjs",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.19793131660818813,
+    "cmdline": [
+      "/usr/bin/gjs",
+      "-m",
+      "/usr/share/gnome-shell/org.gnome.Shell.Notifications"
+    ]
+  },
+  {
+    "pid": 3420,
+    "name": "ibus-daemon",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.09258571643302044,
+    "cmdline": [
+      "/usr/bin/ibus-daemon",
+      "--panel",
+      "disable"
+    ]
+  },
+  {
+    "pid": 3421,
+    "name": "gsd-a11y-settings",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.04476167216745255,
+    "cmdline": [
+      "/usr/libexec/gsd-a11y-settings"
+    ]
+  },
+  {
+    "pid": 3422,
+    "name": "gsd-color",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.14724905838437924,
+    "cmdline": [
+      "/usr/libexec/gsd-color"
+    ]
+  },
+  {
+    "pid": 3423,
+    "name": "gsd-datetime",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0737266082621268,
+    "cmdline": [
+      "/usr/libexec/gsd-datetime"
+    ]
+  },
+  {
+    "pid": 3430,
+    "name": "gsd-housekeeping",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0556841326507306,
+    "cmdline": [
+      "/usr/libexec/gsd-housekeeping"
+    ]
+  },
+  {
+    "pid": 3436,
+    "name": "gsd-keyboard",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.13872545604462488,
+    "cmdline": [
+      "/usr/libexec/gsd-keyboard"
+    ]
+  },
+  {
+    "pid": 3440,
+    "name": "gsd-media-keys",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.16363274910929632,
+    "cmdline": [
+      "/usr/libexec/gsd-media-keys"
+    ]
+  },
+  {
+    "pid": 3442,
+    "name": "gsd-power",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.15314412467325128,
+    "cmdline": [
+      "/usr/libexec/gsd-power"
+    ]
+  },
+  {
+    "pid": 3455,
+    "name": "gsd-print-notifications",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.08176533501967957,
+    "cmdline": [
+      "/usr/libexec/gsd-print-notifications"
+    ]
+  },
+  {
+    "pid": 3464,
+    "name": "gsd-rfkill",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.043409124490784934,
+    "cmdline": [
+      "/usr/libexec/gsd-rfkill"
+    ]
+  },
+  {
+    "pid": 3473,
+    "name": "gsd-screensaver-proxy",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.04106130588222985,
+    "cmdline": [
+      "/usr/libexec/gsd-screensaver-proxy"
+    ]
+  },
+  {
+    "pid": 3475,
+    "name": "gsd-sharing",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.07735041524489661,
+    "cmdline": [
+      "/usr/libexec/gsd-sharing"
+    ]
+  },
+  {
+    "pid": 3477,
+    "name": "gsd-smartcard",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.07742697454734951,
+    "cmdline": [
+      "/usr/libexec/gsd-smartcard"
+    ]
+  },
+  {
+    "pid": 3481,
+    "name": "gsd-sound",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.06012457219299784,
+    "cmdline": [
+      "/usr/libexec/gsd-sound"
+    ]
+  },
+  {
+    "pid": 3487,
+    "name": "gsd-usb-protection",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.04930419077965696,
+    "cmdline": [
+      "/usr/libexec/gsd-usb-protection"
+    ]
+  },
+  {
+    "pid": 3492,
+    "name": "gnome-software",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 2.5905371170982185,
+    "cmdline": [
+      "/usr/bin/gnome-software",
+      "--gapplication-service"
+    ]
+  },
+  {
+    "pid": 3493,
+    "name": "gsd-wacom",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.1474787362917379,
+    "cmdline": [
+      "/usr/libexec/gsd-wacom"
+    ]
+  },
+  {
+    "pid": 3544,
+    "name": "ibus-dconf",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.047543326823240646,
+    "cmdline": [
+      "/usr/libexec/ibus-dconf"
+    ]
+  },
+  {
+    "pid": 3553,
+    "name": "ibus-extension-gtk3",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.21594827245210005,
+    "cmdline": [
+      "/usr/libexec/ibus-extension-gtk3"
+    ]
+  },
+  {
+    "pid": 3566,
+    "name": "blueman-applet",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.3549544459390522,
+    "cmdline": [
+      "/usr/bin/python3",
+      "-sPE",
+      "/usr/bin/blueman-applet"
+    ]
+  },
+  {
+    "pid": 3574,
+    "name": "ibus-portal",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0468287733336804,
+    "cmdline": [
+      "/usr/libexec/ibus-portal"
+    ]
+  },
+  {
+    "pid": 3582,
+    "name": "evolution-alarm-notify",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.4000478750838006,
+    "cmdline": [
+      "/usr/libexec/evolution-data-server/evolution-alarm-notify"
+    ]
+  },
+  {
+    "pid": 3594,
+    "name": "gsd-disk-utility-notify",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.049074512872298325,
+    "cmdline": [
+      "/usr/libexec/gsd-disk-utility-notify"
+    ]
+  },
+  {
+    "pid": 3618,
+    "name": "abrt-applet",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.12622076997732057,
+    "cmdline": [
+      "/usr/bin/abrt-applet",
+      "--gapplication-service"
+    ]
+  },
+  {
+    "pid": 3663,
+    "name": "pcscd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.04749228728827206,
+    "cmdline": [
+      "/usr/sbin/pcscd",
+      "--foreground",
+      "--auto-exit"
+    ]
+  },
+  {
+    "pid": 3691,
+    "name": "gjs",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.19193417124937892,
+    "cmdline": [
+      "/usr/bin/gjs",
+      "-m",
+      "/usr/share/gnome-shell/org.gnome.ScreenSaver"
+    ]
+  },
+  {
+    "pid": 3703,
+    "name": "goa-daemon",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.14939271885306,
+    "cmdline": [
+      "/usr/libexec/goa-daemon"
+    ]
+  },
+  {
+    "pid": 3704,
+    "name": "gvfs-udisks2-volume-monitor",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.09031445712691823,
+    "cmdline": [
+      "/usr/libexec/gvfs-udisks2-volume-monitor"
+    ]
+  },
+  {
+    "pid": 3726,
+    "name": "evolution-calendar-factory",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.17787277936553264,
+    "cmdline": [
+      "/usr/libexec/evolution-calendar-factory"
+    ]
+  },
+  {
+    "pid": 3738,
+    "name": "gvfs-gphoto2-volume-monitor",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0463949372864474,
+    "cmdline": [
+      "/usr/libexec/gvfs-gphoto2-volume-monitor"
+    ]
+  },
+  {
+    "pid": 3739,
+    "name": "goa-identity-service",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0723485408179749,
+    "cmdline": [
+      "/usr/libexec/goa-identity-service"
+    ]
+  },
+  {
+    "pid": 3758,
+    "name": "gvfs-mtp-volume-monitor",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.04353672332820641,
+    "cmdline": [
+      "/usr/libexec/gvfs-mtp-volume-monitor"
+    ]
+  },
+  {
+    "pid": 3780,
+    "name": "gvfs-goa-volume-monitor",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.040729548904934014,
+    "cmdline": [
+      "/usr/libexec/gvfs-goa-volume-monitor"
+    ]
+  },
+  {
+    "pid": 3785,
+    "name": "evolution-addressbook-factory",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.19900314684252848,
+    "cmdline": [
+      "/usr/libexec/evolution-addressbook-factory"
+    ]
+  },
+  {
+    "pid": 3820,
+    "name": "sssd_kcm",
+    "user": "sssd",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.051626489620727765,
+    "cmdline": [
+      "/usr/libexec/sssd/sssd_kcm",
+      "--logger=files"
+    ]
+  },
+  {
+    "pid": 3821,
+    "name": "ibus-engine-simple",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.04761988612569353,
+    "cmdline": [
+      "/usr/libexec/ibus-engine-simple"
+    ]
+  },
+  {
+    "pid": 3873,
+    "name": "abrt-dbus",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.09159044550113296,
+    "cmdline": [
+      "/usr/sbin/abrt-dbus",
+      "-t133"
+    ]
+  },
+  {
+    "pid": 3892,
+    "name": "pipewire-pulse",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.06359526057086189,
+    "cmdline": [
+      "/usr/bin/pipewire-pulse"
+    ]
+  },
+  {
+    "pid": 3932,
+    "name": "xdg-desktop-portal",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.10332953854390842,
+    "cmdline": [
+      "/usr/libexec/xdg-desktop-portal"
+    ]
+  },
+  {
+    "pid": 3944,
+    "name": "xdg-document-portal",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.044965830307326905,
+    "cmdline": [
+      "/usr/libexec/xdg-document-portal"
+    ]
+  },
+  {
+    "pid": 3958,
+    "name": "fusermount3",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.012785403509631543,
+    "cmdline": [
+      "fusermount3",
+      "-o",
+      "rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal",
+      "--",
+      "/run/user/1000/doc"
+    ]
+  },
+  {
+    "pid": 3985,
+    "name": "gvfsd-trash",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.06905649081250091,
+    "cmdline": [
+      "/usr/libexec/gvfsd-trash",
+      "--spawner",
+      ":1.7",
+      "/org/gtk/gvfs/exec_spaw/0"
+    ]
+  },
+  {
+    "pid": 4001,
+    "name": "obexd",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.049431789617078434,
+    "cmdline": [
+      "/usr/libexec/bluetooth/obexd"
+    ]
+  },
+  {
+    "pid": 4006,
+    "name": "blueman-tray",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.28773537838542046,
+    "cmdline": [
+      "/usr/bin/python3",
+      "-sPE",
+      "/usr/bin/blueman-tray"
+    ]
+  },
+  {
+    "pid": 4067,
+    "name": "gsd-printer",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.10922460483278044,
+    "cmdline": [
+      "/usr/libexec/gsd-printer"
+    ]
+  },
+  {
+    "pid": 4068,
+    "name": "xdg-desktop-portal-gnome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.2625728876459061,
+    "cmdline": [
+      "/usr/libexec/xdg-desktop-portal-gnome"
+    ]
+  },
+  {
+    "pid": 4095,
+    "name": "xdg-desktop-portal-gtk",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.15457323165237177,
+    "cmdline": [
+      "/usr/libexec/xdg-desktop-portal-gtk"
+    ]
+  },
+  {
+    "pid": 4145,
+    "name": "tracker-miner-fs-3",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.1799654002992448,
+    "cmdline": [
+      "/usr/libexec/tracker-miner-fs-3"
+    ]
+  },
+  {
+    "pid": 4150,
+    "name": "fwupd",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.2637978364851522,
+    "cmdline": [
+      "/usr/libexec/fwupd/fwupd"
+    ]
+  },
+  {
+    "pid": 4240,
+    "name": "passimd",
+    "user": "passim",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.08033622804055908,
+    "cmdline": [
+      "/usr/libexec/passimd"
+    ]
+  },
+  {
+    "pid": 4326,
+    "name": "catatonit",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.004134202332455709,
+    "cmdline": [
+      "catatonit",
+      "-P"
+    ]
+  },
+  {
+    "pid": 4358,
+    "name": "Xwayland",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.7273899326048461,
+    "cmdline": [
+      "/usr/bin/Xwayland",
+      ":0",
+      "-rootless",
+      "-noreset",
+      "-accessx",
+      "-core",
+      "-auth",
+      "/run/user/1000/.mutter-Xwaylandauth.HASLF3",
+      "-listenfd",
+      "4",
+      "-listenfd",
+      "5",
+      "-displayfd",
+      "6",
+      "-initfd",
+      "7",
+      "-byteswappedclients",
+      "-enable-ei-portal"
+    ]
+  },
+  {
+    "pid": 4374,
+    "name": "gsd-xsettings",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.43123303094960835,
+    "cmdline": [
+      "/usr/libexec/gsd-xsettings"
+    ]
+  },
+  {
+    "pid": 4397,
+    "name": "ibus-x11",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.15845223630998453,
+    "cmdline": [
+      "/usr/libexec/ibus-x11"
+    ]
+  },
+  {
+    "pid": 4423,
+    "name": "mutter-x11-frames",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.7411195675113964,
+    "cmdline": [
+      "/usr/libexec/mutter-x11-frames"
+    ]
+  },
+  {
+    "pid": 4696,
+    "name": "bwrap",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.014520747698563567,
+    "cmdline": [
+      "/usr/bin/bwrap",
+      "--args",
+      "43",
+      "--",
+      "/app/bin/chrome"
+    ]
+  },
+  {
+    "pid": 4704,
+    "name": "flatpak-session-helper",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.043460164025753534,
+    "cmdline": [
+      "/usr/libexec/flatpak-session-helper"
+    ]
+  },
+  {
+    "pid": 4709,
+    "name": "p11-kit-server",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.007783529082709822,
+    "cmdline": [
+      "server",
+      "--sh",
+      "-n",
+      "/run/user/1000/.flatpak-helper/pkcs11-flatpak-4704",
+      "--provider",
+      "p11-kit-trust.so",
+      "pkcs11:model=p11-kit-trust?write-protected=yes"
+    ]
+  },
+  {
+    "pid": 4712,
+    "name": "bwrap",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.013576516301644673,
+    "cmdline": [
+      "/usr/bin/bwrap",
+      "--args",
+      "43",
+      "--",
+      "/usr/bin/xdg-dbus-proxy",
+      "--args=45"
+    ]
+  },
+  {
+    "pid": 4713,
+    "name": "xdg-dbus-proxy",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.03807549308656739,
+    "cmdline": [
+      "/usr/bin/xdg-dbus-proxy",
+      "--args=45"
+    ]
+  },
+  {
+    "pid": 4717,
+    "name": "bwrap",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.010309986063654976,
+    "cmdline": [
+      "/usr/bin/bwrap",
+      "--args",
+      "43",
+      "--",
+      "/app/bin/chrome"
+    ]
+  },
+  {
+    "pid": 4718,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 2.858494675683311,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--disable-features=WebAssemblyTrapHandler,DesktopPWAsRunOnOsLogin"
+    ]
+  },
+  {
+    "pid": 4728,
+    "name": "flatpak-portal",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.08656305130672694,
+    "cmdline": [
+      "/usr/libexec/flatpak-portal"
+    ]
+  },
+  {
+    "pid": 4740,
+    "name": "chrome_crashpad_handler",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.024728654692281367,
+    "cmdline": [
+      "/app/extra/chrome_crashpad_handler",
+      "--monitor-self",
+      "--monitor-self-annotation=ptype=crashpad-handler",
+      "--database=/home/sonic/.var/app/com.google.Chrome/config/google-chrome/Crash Reports",
+      "--metrics-dir=/home/sonic/.var/app/com.google.Chrome/config/google-chrome",
+      "--url=https://clients2.google.com/cr/report",
+      "--annotation=channel=",
+      "--annotation=lsb-release=Freedesktop SDK 24.08 (Flatpak runtime)",
+      "--annotation=plat=Linux",
+      "--annotation=prod=Chrome_Linux",
+      "--annotation=ver=141.0.7390.107",
+      "--initial-client-fd=10",
+      "--shared-client-connection"
+    ]
+  },
+  {
+    "pid": 4742,
+    "name": "chrome_crashpad_handler",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.021589723291713145,
+    "cmdline": [
+      "/app/extra/chrome_crashpad_handler",
+      "--no-periodic-tasks",
+      "--monitor-self-annotation=ptype=crashpad-handler",
+      "--database=/home/sonic/.var/app/com.google.Chrome/config/google-chrome/Crash Reports",
+      "--url=https://clients2.google.com/cr/report",
+      "--annotation=channel=",
+      "--annotation=lsb-release=Freedesktop SDK 24.08 (Flatpak runtime)",
+      "--annotation=plat=Linux",
+      "--annotation=prod=Chrome_Linux",
+      "--annotation=ver=141.0.7390.107",
+      "--initial-client-fd=4",
+      "--shared-client-connection"
+    ]
+  },
+  {
+    "pid": 4747,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.4036461622990861,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--no-zygote-sandbox",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 4749,
+    "name": "zypak-sandbox",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": null
+  },
+  {
+    "pid": 4751,
+    "name": "cat",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.012606765137241483,
+    "cmdline": [
+      "cat"
+    ]
+  },
+  {
+    "pid": 4752,
+    "name": "cat",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.01242812676485142,
+    "cmdline": [
+      "cat"
+    ]
+  },
+  {
+    "pid": 4753,
+    "name": "bwrap",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.014240030256236328,
+    "cmdline": [
+      "/usr/bin/bwrap",
+      "--args",
+      "43",
+      "--",
+      "/app/bin/zypak-helper",
+      "child",
+      "-",
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 4775,
+    "name": "bwrap",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.010845901180825162,
+    "cmdline": [
+      "/usr/bin/bwrap",
+      "--args",
+      "43",
+      "--",
+      "/app/bin/zypak-helper",
+      "child",
+      "-",
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 4776,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.41809035069519673,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 4817,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 1.5878654526402878,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=gpu-process",
+      "--ozone-platform=wayland",
+      "--render-node-override=/dev/dri/renderD128",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable",
+      "--gpu-preferences=UAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA",
+      "--shared-files",
+      "--metrics-shmem-handle=4,i,6485812888936186311,8017242641321697710,262144",
+      "--field-trial-handle=3,i,3382205552264349728,3198077176203222979,262144",
+      "--disable-features=DesktopPWAsRunOnOsLogin,EyeDropper,WebAssemblyTrapHandler",
+      "--variations-seed-version=20251026-030033.822000"
+    ]
+  },
+  {
+    "pid": 4822,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.978938280697537,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=utility",
+      "--utility-sub-type=network.mojom.NetworkService",
+      "--lang=en-GB",
+      "--service-sandbox-type=none",
+      "--render-node-override=/dev/dri/renderD128",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable",
+      "--shared-files=v8_context_snapshot_data:100",
+      "--metrics-shmem-handle=4,i,7894198557200114399,3046627087043144621,524288",
+      "--field-trial-handle=3,i,3382205552264349728,3198077176203222979,262144",
+      "--disable-features=DesktopPWAsRunOnOsLogin,EyeDropper,WebAssemblyTrapHandler",
+      "--variations-seed-version=20251026-030033.822000"
+    ]
+  },
+  {
+    "pid": 4836,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.4022936146224184,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 4914,
+    "name": "p11-kit-remote",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.12114233624794597,
+    "cmdline": [
+      "p11-kit-remote",
+      "--provider",
+      "p11-kit-trust.so",
+      "pkcs11:model=p11-kit-trust?write-protected=yes"
+    ]
+  },
+  {
+    "pid": 5114,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 3.8688733099214985,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 5190,
+    "name": "python3",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 1.0535070412866454,
+    "cmdline": [
+      "/usr/bin/python3",
+      "/usr/share/ibus-typing-booster/engine/main.py",
+      "--ibus"
+    ]
+  },
+  {
+    "pid": 5248,
+    "name": "gvfsd-metadata",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.04249041286135034,
+    "cmdline": [
+      "/usr/libexec/gvfsd-metadata"
+    ]
+  },
+  {
+    "pid": 5831,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 1.0273237598477594,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 5891,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 1.8286189390871221,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 5909,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.8049189862221328,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 5933,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.7260629046956627,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 5945,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.7433653070500144,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 5968,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.702176402330363,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 5980,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.7310902988900687,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 6018,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.8167856781023297,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 6030,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.7090922593186069,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 6042,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.7783529082709821,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 6100,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.7405836523942263,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 6134,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.8028263652884206,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 6146,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.6996754651169023,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 6158,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.7599021163798373,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 6170,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.7312178977274902,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 6182,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.7026102383775961,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 6194,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.728334164001765,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 6209,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.738746229135357,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 6225,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.6974297255782843,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 6238,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.7070506779198633,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 6371,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.6578230464426593,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 7127,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.5077923334024919,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=utility",
+      "--utility-sub-type=audio.mojom.AudioService",
+      "--lang=en-GB",
+      "--service-sandbox-type=none",
+      "--render-node-override=/dev/dri/renderD128",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable",
+      "--shared-files=v8_context_snapshot_data:100",
+      "--metrics-shmem-handle=4,i,17316748945266695386,1682559428063269701,524288",
+      "--field-trial-handle=3,i,3382205552264349728,3198077176203222979,262144",
+      "--disable-features=DesktopPWAsRunOnOsLogin,EyeDropper,WebAssemblyTrapHandler",
+      "--variations-seed-version=20251026-030033.822000"
+    ]
+  },
+  {
+    "pid": 8462,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 1.400780037212925,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 8514,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.9505602992550014,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 8526,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.8395493106983204,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 8548,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.807726160645405,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 10490,
+    "name": "kworker/u49:5-ttm",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 12032,
+    "name": "kworker/u48:4-btrfs-endio-write",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 12162,
+    "name": "kworker/u48:6-btrfs-endio-write",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 12819,
+    "name": "kworker/0:2-events",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 12915,
+    "name": "kworker/u48:14-events_unbound",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 14082,
+    "name": "gvfsd-recent",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.07023040011677846,
+    "cmdline": [
+      "/usr/libexec/gvfsd-recent",
+      "--spawner",
+      ":1.7",
+      "/org/gtk/gvfs/exec_spaw/1"
+    ]
+  },
+  {
+    "pid": 14084,
+    "name": "gvfsd-network",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.06813777918306631,
+    "cmdline": [
+      "/usr/libexec/gvfsd-network",
+      "--spawner",
+      ":1.7",
+      "/org/gtk/gvfs/exec_spaw/2"
+    ]
+  },
+  {
+    "pid": 14109,
+    "name": "gvfsd-dnssd",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.06760186406589612,
+    "cmdline": [
+      "/usr/libexec/gvfsd-dnssd",
+      "--spawner",
+      ":1.7",
+      "/org/gtk/gvfs/exec_spaw/3"
+    ]
+  },
+  {
+    "pid": 14143,
+    "name": "gvfsd-wsdd",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.07571715012590177,
+    "cmdline": [
+      "/usr/libexec/gvfsd-wsdd",
+      "--spawner",
+      ":1.7",
+      "/org/gtk/gvfs/exec_spaw/4"
+    ]
+  },
+  {
+    "pid": 14149,
+    "name": "wsdd",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.22107774571644323,
+    "cmdline": [
+      "/usr/bin/python3",
+      "/usr/bin/wsdd",
+      "--no-host",
+      "--discovery",
+      "--listen",
+      "/run/user/1000/gvfsd/wsdd"
+    ]
+  },
+  {
+    "pid": 15782,
+    "name": "kworker/9:1-events",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 15834,
+    "name": "kworker/2:0-cgroup_destroy",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 16568,
+    "name": "kworker/u48:3-mt76",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 16597,
+    "name": "kworker/11:0-cgroup_destroy",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 16942,
+    "name": "kworker/1:0-mm_percpu_wq",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 17276,
+    "name": "kworker/5:2-events",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 17371,
+    "name": "kworker/u48:0-btrfs-endio-write",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 17495,
+    "name": "kworker/u48:1-btrfs-endio-write",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 17637,
+    "name": "kworker/3:2-events",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 17844,
+    "name": "kworker/6:2-cgroup_destroy",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 17875,
+    "name": "kworker/7:1-cgroup_destroy",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 18297,
+    "name": "kworker/u49:0-ttm",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 18310,
+    "name": "kworker/u49:2-ttm",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 18311,
+    "name": "kworker/u49:3-ttm",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 18351,
+    "name": "kworker/u48:8-btrfs-compressed-write",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 18413,
+    "name": "kworker/u49:4-ttm",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 18539,
+    "name": "kworker/8:1-rcu_gp",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 18565,
+    "name": "kworker/0:0-events",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 18642,
+    "name": "kworker/2:2-cgroup_destroy",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 18915,
+    "name": "kworker/u48:10-events_unbound",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 18960,
+    "name": "kworker/10:2-cgroup_destroy",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 19159,
+    "name": "kworker/u49:6-ttm",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 19497,
+    "name": "kworker/8:2-cgroup_destroy",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 19686,
+    "name": "kworker/11:3-events",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 19828,
+    "name": "kworker/6:1-events",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 19865,
+    "name": "kworker/4:0-cgroup_destroy",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 19902,
+    "name": "kworker/9:2-cgwb_release",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 19911,
+    "name": "kworker/10:3-cgwb_release",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 19996,
+    "name": "kworker/u48:5-btrfs-endio-write",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 20325,
+    "name": "kworker/3:1-cgroup_destroy",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 20439,
+    "name": "kworker/7:3-cgroup_destroy",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 20461,
+    "name": "kworker/1:2-cgroup_destroy",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 20516,
+    "name": "kworker/u49:1-ttm",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 20685,
+    "name": "kworker/10:1-cgroup_destroy",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 20686,
+    "name": "kworker/u48:7-btrfs-endio-write",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 20741,
+    "name": "kworker/2:3-cgroup_destroy",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 20884,
+    "name": "kworker/4:2-events",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21088,
+    "name": "kworker/7:0-events",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21124,
+    "name": "kworker/6:0-cgroup_destroy",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21132,
+    "name": "kworker/8:3-cgwb_release",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21171,
+    "name": "kworker/u49:7-ttm",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21175,
+    "name": "kworker/u49:8-ttm",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21176,
+    "name": "kworker/u49:9-ttm",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21177,
+    "name": "kworker/u49:10-ttm",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21178,
+    "name": "kworker/u49:11-ttm",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21179,
+    "name": "kworker/u49:12-ttm",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21180,
+    "name": "kworker/u49:13-ttm",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21188,
+    "name": "ptyxis",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 1.2653976707087427,
+    "cmdline": [
+      "/usr/bin/ptyxis",
+      "--gapplication-service"
+    ]
+  },
+  {
+    "pid": 21195,
+    "name": "ptyxis-agent",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.04596110123921439,
+    "cmdline": [
+      "/usr/libexec/ptyxis-agent",
+      "--socket-fd=3",
+      "--rlimit-nofile=1024"
+    ]
+  },
+  {
+    "pid": 21242,
+    "name": "bash",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.06433533382790643,
+    "cmdline": [
+      "/usr/bin/bash"
+    ]
+  },
+  {
+    "pid": 21414,
+    "name": "nautilus",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 1.9482300892860107,
+    "cmdline": [
+      "/usr/bin/nautilus",
+      "--gapplication-service"
+    ]
+  },
+  {
+    "pid": 21427,
+    "name": "systemd-nsresourcework:",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.03907076401845488,
+    "cmdline": [
+      "systemd-nsresourcework:",
+      "waiting..."
+    ]
+  },
+  {
+    "pid": 21428,
+    "name": "systemd-userwork:",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.04029571285770101,
+    "cmdline": [
+      "systemd-userwork:",
+      "waiting..."
+    ]
+  },
+  {
+    "pid": 21429,
+    "name": "systemd-nsresourcework:",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.038943165181033405,
+    "cmdline": [
+      "systemd-nsresourcework:",
+      "waiting..."
+    ]
+  },
+  {
+    "pid": 21430,
+    "name": "systemd-userwork:",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.04019363378776383,
+    "cmdline": [
+      "systemd-userwork:",
+      "waiting..."
+    ]
+  },
+  {
+    "pid": 21527,
+    "name": "systemd-userwork:",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.04131650355707279,
+    "cmdline": [
+      "systemd-userwork:",
+      "waiting..."
+    ]
+  },
+  {
+    "pid": 21528,
+    "name": "systemd-nsresourcework:",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.039249402390844935,
+    "cmdline": [
+      "systemd-nsresourcework:",
+      "waiting..."
+    ]
+  },
+  {
+    "pid": 21529,
+    "name": "systemd-nsresourcework:",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.040091554717826654,
+    "cmdline": [
+      "systemd-nsresourcework:",
+      "waiting..."
+    ]
+  },
+  {
+    "pid": 21530,
+    "name": "systemd-nsresourcework:",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.03907076401845488,
+    "cmdline": [
+      "systemd-nsresourcework:",
+      "waiting..."
+    ]
+  },
+  {
+    "pid": 21562,
+    "name": "kworker/5:0-mm_percpu_wq",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21584,
+    "name": "kworker/11:1-events",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21606,
+    "name": "kworker/1:1-events",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21684,
+    "name": "kworker/0:1-events",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21693,
+    "name": "kworker/3:0-cgroup_destroy",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21723,
+    "name": "kworker/10:0-events",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21736,
+    "name": "kworker/3:3-cgwb_release",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21762,
+    "name": "kworker/2:1-events",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21808,
+    "name": "kworker/u49:14-ttm",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21809,
+    "name": "kworker/u49:15-ttm",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21810,
+    "name": "kworker/u49:16",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21889,
+    "name": "kworker/4:1-events",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21945,
+    "name": "kworker/11:2-cgroup_destroy",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.0,
+    "cmdline": []
+  },
+  {
+    "pid": 21989,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.7794757780402911,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 22002,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.9865431714078566,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 22015,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.45325659028855453,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 22088,
+    "name": "chrome",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.5753941974683879,
+    "cmdline": [
+      "/app/extra/chrome",
+      "--type=zygote",
+      "--crashpad-handler-pid=18",
+      "--enable-crash-reporter=9ff0dc98-07a6-46f4-9e7a-a130a89d866e,",
+      "--change-stack-guard-on-fork=enable"
+    ]
+  },
+  {
+    "pid": 22101,
+    "name": "nm-dispatcher",
+    "user": "root",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.05956313730834336,
+    "cmdline": [
+      "/usr/libexec/nm-dispatcher"
+    ]
+  },
+  {
+    "pid": 22127,
+    "name": "python",
+    "user": "sonic",
+    "cpu_percent": 0.0,
+    "memory_percent": 0.11124066646403973,
+    "cmdline": [
+      "python",
+      "forensic_tools.py"
+    ]
+  }
+]
